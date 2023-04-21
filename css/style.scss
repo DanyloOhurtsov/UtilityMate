@@ -1,0 +1,481 @@
+@import 'var.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// HEADER
+header{
+    width: 100%;
+    padding: 24px 16px;
+    background-color: $color65;
+    .headerInside{
+        margin: auto;
+        display: flex;
+        max-width: 1240px;
+        align-items: center;
+        justify-content: space-between;
+        .headerLogo{
+            color: $colorFF;
+            text-decoration: none;
+            font-size: $font-size40;
+            font-family: 'Bebas Neue';
+            line-height: $font-height48;
+            font-weight: $font-weight400;
+        }
+        ul{
+            gap: 50px;
+            display: flex;
+            list-style: none;
+            li{
+                a{
+                    color: $colorFF;
+                    position: relative;
+                    font-family: $family;
+                    text-decoration: none;
+                    font-size: $font-size18;
+                    line-height: $font-height25;
+                    font-weight: $font-weight400;
+                }
+                a::before{
+                    left: 50%;
+                    width: 0%;
+                    height: 2px;
+                    content: '';
+                    bottom: -2px;
+                    transition: 200ms;
+                    position: absolute;
+                    border-radius: 2px;
+                    background-color: white;
+                    transform: translate(-50%);
+                }
+                a:hover::before{
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    content: '';
+                    bottom: -2px;
+                    position: absolute;
+                    border-radius: 2px;
+                    background-color: white;
+                    transform: translate(0%);
+                }
+            }
+            .contactUsHeader{
+                color: black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                padding: 8px 16px;
+                border-radius: 24px;
+                font-family: 'Nunito';
+                text-decoration: none;
+                background-color: white;
+            }
+        }
+        .contactUsHeader{
+            color: $color00;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-family: $family;
+            text-decoration: none;
+            font-size: $font-size16;
+            background-color: white;
+            line-height: $font-height22;
+            font-weight: $font-weight400;
+        }
+    }
+}
+// MAIN
+main{
+    padding: 0 16px;
+    .calculator{
+        margin: auto;
+        margin-top: 64px;
+        max-width: 1110px;
+        h2{
+            color: $color00;
+            text-align: center;
+            font-family: $family;
+            font-size: $font-size40;
+            font-style: $font-styleNor;
+            line-height: $font-height55;
+            font-weight: $font-weight600;
+        }
+        .ratesection{
+            width: 100%;
+            padding: 16px 0;
+            display: flex;
+            color: $colorFF;
+            margin-top: 40px;
+            border-radius: 24px;
+            align-items: center;
+            background-color: $color95;
+            justify-content: space-around;
+            .currency{
+                display: flex;
+                max-width: 350px;
+                font-family: $family;
+                font-size: $font-size18;
+                font-style: $font-styleNor;
+                line-height: $font-height22;
+                font-weight: $font-weight700;
+                justify-content: space-between;
+                select{
+                    border: none;
+                    outline: none;
+                    color: $colorFF;
+                    cursor: pointer;
+                    min-width: 100px;
+                    background: none;
+                    text-align: right;
+                    font-family: $family;
+                    font-size: $font-size18;
+                    font-style: $font-styleNor;
+                    line-height: $font-height22;
+                    font-weight: $font-weight600;
+                }
+            }
+            .rate{
+                gap: 16px;
+                display: flex;
+                align-items: center;
+                font-family: $family;
+                font-size: $font-size18;
+                font-style: $font-styleNor;
+                line-height: $font-height22;
+                font-weight: $font-weight700;
+                .rates{
+                    display: flex;
+                    flex-direction: column;
+                    .rateValue{
+                        gap: 8px;
+                        display: flex;
+                        font-weight: $font-weight600;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .time{
+                gap: 16px;
+                display: flex;
+                font-family: $family;
+                font-size: $font-size18;
+                font-style: $font-styleNor;
+                line-height: $font-height22;
+                font-weight: $font-weight700;
+                .timeValue{
+                    font-weight: $font-weight600;
+                }
+            }
+        }
+        .calculatorBloks{
+            gap: 32px;
+            width: 100%;
+            display: flex;
+            margin-top: 64px;
+            justify-content: space-between;
+            .inputBlock{
+                width: 48%;
+                padding: 24px;
+                border-radius: 24px;
+                background-color: $color65;
+                // max-height: 0;
+                transition: 500ms;
+                .itemInputBlock{
+                    .titlItem{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .text{
+                            gap: 16px;
+                            display: flex;
+                            align-items: center;
+                            input{
+                                border: none;
+                                outline: none;
+                                display: flex;
+                                color: $colorFF;
+                                background: none;
+                                font-family: $family;
+                                font-size: $font-size24;
+                                line-height: $font-height33;
+                                font-weight: $font-weight500;
+                            }
+                            input::placeholder{
+                                color: $colorFF;
+                            }
+                            .editTitle{
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                color: $colorFF;
+                                background: none;
+                                font-size: $font-size18;
+                            }
+                        }
+                        .price{
+                            gap: 24px;
+                            display: flex;
+                            color: $colorFF;
+                            align-items: center;
+                            font-family: $family;
+                            font-size: $font-size24;
+                            line-height: $font-height33;
+                            font-weight: $font-weight500;
+                            .openItem{
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                color: $colorFF;
+                                background: none;
+                                font-size: $font-size18;
+                            }
+                        }
+                    }
+                    .contentInput{
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: 500ms;
+                        hr{
+                            color: $colorFF;
+                            margin-top: 8px;
+                            border-radius: 1px;
+                            border: 1px solid $colorFF;
+                        }
+                        .categoryItem{
+                            padding: 16px;
+                            margin-top: 16px;
+                            border-radius: 24px;
+                            background-color: $colorFF;
+                            .titleCategoryItem{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                h5{
+                                    font-family: $family;
+                                    font-size: $font-size16;
+                                    font-style: $font-styleNor;
+                                    line-height: $font-height22;
+                                    font-weight: $font-weight700;
+                                }
+                                .priceCategoryItem{
+                                    gap: 16px;
+                                    display: flex;
+                                    font-family: $family;
+                                    align-content: inherit;
+                                    font-size: $font-size16;
+                                    font-style: $font-styleNor;
+                                    line-height: $font-height22;
+                                    font-weight: $font-weight700;
+                                    .openCategory{
+                                        border: none;
+                                        display: flex;
+                                        outline: none;
+                                        cursor: pointer;
+                                        background: none;
+                                        align-items: center;
+                                        font-size: $font-size16;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                            .contentCat{
+                                max-height: scrollHeight;
+                                transition: 500ms;
+                                overflow: hidden;
+                                hr{
+                                    border: 1px solid $colorCC;
+                                }
+                                .editCategory{
+                                    display: flex;
+                                    margin-top: 8px;
+                                    justify-content: space-between;
+                                    .left, .right{
+                                        gap: 16px;
+                                        width: 50%;
+                                        width: 200px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        .blockEdit{
+                                            width: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            font-family: $family;
+                                            font-size: $font-size16;
+                                            font-style: $font-styleNor;
+                                            line-height: $font-height22;
+                                            font-weight: $font-weight700;
+                                            justify-content: space-between;
+                                            .input{
+                                                gap: 8px;
+                                                width: 150px;
+                                                display: flex;
+                                                justify-content: end;
+                                                input{
+                                                    width: 100px;
+                                                    border: none;
+                                                    outline: none;
+                                                    background: none;
+                                                    font-family: $family;
+                                                    font-size: $font-size16;
+                                                    font-style: $font-styleNor;
+                                                    line-height: $font-height22;
+                                                    font-weight: $font-weight400;
+                                                    border-bottom: 0.5px solid $color95;
+                                                }
+                                                .editPrice, .editName{
+                                                    border: none;
+                                                    outline: none;
+                                                    cursor: pointer;
+                                                    background: none;
+                                                    font-size: $font-size16;
+                                                }
+                                            }
+                                            select{
+                                                border: none;
+                                                outline: none;
+                                                cursor: pointer;
+                                                background: none;
+                                                font-family: $family;
+                                                font-size: $font-size16;
+                                                font-style: $font-styleNor;
+                                                line-height: $font-height22;
+                                                font-weight: $font-weight400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // addNewCategory
+                        .addNewCategory{
+                            gap: 24px;
+                            width: 100%;
+                            height: 56px;
+                            border: none;
+                            outline: none;
+                            display: flex;
+                            color: $color8B;
+                            cursor: pointer;
+                            margin-top: 16px;
+                            background: none;
+                            border-radius: 24px;
+                            align-items: center;
+                            font-family: $family;
+                            font-size: $font-size16;
+                            justify-content: center;
+                            background-color: $colorFF;
+                            font-style: $font-styleNor;
+                            line-height: $font-height22;
+                            font-weight: $font-weight400;
+                            span{
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                border-radius: 50%;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid $color8B;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 
+.none{
+    display: none;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+// Media
+@media (max-width: 630px) {
+    header{
+        height: 70px;
+        padding: 16px;
+        .headerInside{
+            display: none;
+        }
+        .headerMobile{
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: end;
+            .headerLogoMobile{
+                left: 50%;
+                color: $colorFF;
+                position: absolute;
+                text-decoration: none;
+                font-size: $font-size32;
+                font-family: 'Bebas Neue';
+                transform: translate(-50%);
+                font-style: $font-styleNor;
+                line-height: $font-height38;
+                font-weight: $font-weight400;
+            }
+            .headerBtnMobile{
+                border: none;
+                outline: none;
+                color: $colorFF;
+                background: none;
+                font-size: $font-size22;
+            }
+            .menu{
+                top: 54px;
+                right: -16px;
+                padding: 64px;
+                position: absolute;
+                background-color: $color65;
+                border-radius: 16px 0 0 16px;
+                box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
+                ul{
+                    gap: 64px;
+                    display: flex;
+                    list-style: none;
+                    text-align: center;
+                    flex-direction: column;
+                    li{
+                        a{
+                            color: $colorFF;
+                            position: relative;
+                            text-decoration: none;
+                        }
+                        a::before{
+                            left: 50%;
+                            width: 0%;
+                            content: '';
+                            height: 2px;
+                            bottom: -2px;
+                            transition: 200ms;
+                            position: absolute;
+                            border-radius: 2px;
+                            background-color: white;
+                            transform: translate(-50%);
+                        }
+                        a:hover::before{
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            content: '';
+                            bottom: -2px;
+                            position: absolute;
+                            border-radius: 2px;
+                            transform: translate(0%);
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

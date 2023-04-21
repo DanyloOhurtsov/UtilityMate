@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="headerInside">
+            <a href="index.html" class="headerLogo">UTILITYMATE</a>
+            <ul>
+                <li><a href="index.html">Calculator</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Donate</a></li>
+            </ul>
+            <a href="#" class="contactUsHeader">Contact Us</a>
+        </div>
+        <div class="headerMobile none">
+            <a href="" class="headerLogoMobile">UTILITYMATE</a>
+            <button class="headerBtnMobile"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu none">
+                <ul>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>Calculator</h2>
+            <div class="ratesection">
+                <div class="currency">
+                    <p>Currency:</p>
+                    <select name="" id="" class="currencyChageRate">
+                        <option value="Mono">Monobank Ukraine</option>
+                        <option value="NBU">National Bank of Ukraine</option>
+                        <option value="NBP">National Bank of Poland</option>
+                    </select>
+                </div>
+                <div class="rate">
+                    <p>Rate:</p>
+                    <div class="rates">
+                        <p class="rateValue rateUSD">USD <span class="insertUSDRate">12.34</span></p>
+                        <p class="rateValue rateEUR">EUR <span class="insertEURRate">12.34</span></p>
+                        <p class="rateValue ratePLN">PLN <span class="insertPLNRate">12.34</span></p>
+                    </div>
+                </div>
+                <div class="time">
+                    <p>Time:</p>
+                    <p class="timeValue">10 august 2023 10:00</p>
+                </div>
+            </div>
+            <div class="calculatorBloks">
+                <div class="inputBlock">
+                    <div class="itemInputBlock">
+                        <div class="titlItem">
+                            <div class="text">
+                                <input type="text" placeholder="Name of your">
+                                <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
+                            </div>
+                            <div class="price">
+                                <p>UAH 0.00</p>
+                                <button class="openItem"><i class="fa-solid fa-chevron-up"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentInput">
+                            <hr>
+                            <div class="categoryItem">
+                                <div class="titleCategoryItem">
+                                    <h5>Value</h5>
+                                    <div class="priceCategoryItem">
+                                        <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
+                                        <button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>
+                                    </div>
+                                </div>
+                                <div class="contentCat">
+                                    <hr>
+                                    <div class="editCategory">
+                                        <div class="left">
+                                            <div class="blockEdit">
+                                                <p>Name:</p>
+                                                <div class="input">
+                                                    <input type="text" placeholder="Enter name" class="btneditname">
+                                                    <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="blockEdit">
+                                                <p>Currency:</p>
+                                                <select name="" id="" class="selectCur">
+                                                    <option value="UAH">UAH</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="PLN">PLN</option>
+                                                    <option value="EUR">EUR</option>
+                                                </select>
+                                            </div>
+                                            <div class="blockEdit">
+                                                <p>Price:</p>
+                                                <div class="input">
+                                                    <input type="number" placeholder="Enter value" class="btneditprice">
+                                                    <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="addNewCategory">Add new <span><i class="fa-solid fa-plus"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultBlock">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/0e88421850.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 24px 16px;
+  background-color: #656565;
+}
+header .headerInside {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1240px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .headerInside .headerLogo {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Bebas Neue";
+  line-height: 48px;
+  font-weight: 400;
+}
+header .headerInside ul {
+  gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+header .headerInside ul li a {
+  color: #FFFFFF;
+  position: relative;
+  font-family: "Nunito";
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+header .headerInside ul li a::before {
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  content: "";
+  bottom: -2px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  position: absolute;
+  border-radius: 2px;
+  background-color: white;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+header .headerInside ul li a:hover::before {
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  bottom: -2px;
+  position: absolute;
+  border-radius: 2px;
+  background-color: white;
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+header .headerInside ul .contactUsHeader {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-family: "Nunito";
+  text-decoration: none;
+  background-color: white;
+}
+header .headerInside .contactUsHeader {
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-family: "Nunito";
+  text-decoration: none;
+  font-size: 16px;
+  background-color: white;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+main {
+  padding: 0 16px;
+}
+main .calculator {
+  margin: auto;
+  margin-top: 64px;
+  max-width: 1110px;
+}
+main .calculator h2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 40px;
+  font-style: normal;
+  line-height: 55px;
+  font-weight: 600;
+}
+main .calculator .ratesection {
+  width: 100%;
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  margin-top: 40px;
+  border-radius: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #959595;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .calculator .ratesection .currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 350px;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .ratesection .currency select {
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  min-width: 100px;
+  background: none;
+  text-align: right;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 600;
+}
+main .calculator .ratesection .rate {
+  gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+}
+main .calculator .ratesection .rate .rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .calculator .ratesection .rate .rates .rateValue {
+  gap: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .ratesection .time {
+  gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+}
+main .calculator .ratesection .time .timeValue {
+  font-weight: 600;
+}
+main .calculator .calculatorBloks {
+  gap: 32px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputBlock {
+  width: 48%;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #656565;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text {
+  gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input {
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  background: none;
+  font-family: "Nunito";
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input::-moz-placeholder {
+  color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text input::placeholder {
+  color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .text .editTitle {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: none;
+  font-size: 18px;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .price {
+  gap: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito";
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .titlItem .price .openItem {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: none;
+  font-size: 18px;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput hr {
+  color: #FFFFFF;
+  margin-top: 8px;
+  border-radius: 1px;
+  border: 1px solid #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem {
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .titleCategoryItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .titleCategoryItem h5 {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .titleCategoryItem .priceCategoryItem {
+  gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Nunito";
+  -ms-flex-line-pack: inherit;
+      align-content: inherit;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .titleCategoryItem .priceCategoryItem .openCategory {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat {
+  max-height: scrollHeight;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  overflow: hidden;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat hr {
+  border: 1px solid #CCCCCC;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right {
+  gap: 16px;
+  width: 50%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit .input, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit .input {
+  gap: 8px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit .input input, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit .input input {
+  width: 100px;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 400;
+  border-bottom: 0.5px solid #959595;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit .input .editPrice, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit .input .editName, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit .input .editPrice, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit .input .editName {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .left .blockEdit select, main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .categoryItem .contentCat .editCategory .right .blockEdit select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 400;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .addNewCategory {
+  gap: 24px;
+  width: 100%;
+  height: 56px;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #8B8B8B;
+  cursor: pointer;
+  margin-top: 16px;
+  background: none;
+  border-radius: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito";
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 400;
+}
+main .calculator .calculatorBloks .inputBlock .itemInputBlock .contentInput .addNewCategory span {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #8B8B8B;
+}
+
+.none {
+  display: none;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 630px) {
+  header {
+    height: 70px;
+    padding: 16px;
+  }
+  header .headerInside {
+    display: none;
+  }
+  header .headerMobile {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .headerMobile .headerLogoMobile {
+    left: 50%;
+    color: #FFFFFF;
+    position: absolute;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "Bebas Neue";
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    font-style: normal;
+    line-height: 38px;
+    font-weight: 400;
+  }
+  header .headerMobile .headerBtnMobile {
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background: none;
+    font-size: 22px;
+  }
+  header .headerMobile .menu {
+    top: 54px;
+    right: -16px;
+    padding: 64px;
+    position: absolute;
+    background-color: #656565;
+    border-radius: 16px 0 0 16px;
+    -webkit-box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
+            box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
+  }
+  header .headerMobile .menu ul {
+    gap: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerMobile .menu ul li a {
+    color: #FFFFFF;
+    position: relative;
+    text-decoration: none;
+  }
+  header .headerMobile .menu ul li a::before {
+    left: 50%;
+    width: 0%;
+    content: "";
+    height: 2px;
+    bottom: -2px;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    position: absolute;
+    border-radius: 2px;
+    background-color: white;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  header .headerMobile .menu ul li a:hover::before {
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    bottom: -2px;
+    position: absolute;
+    border-radius: 2px;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    background-color: white;
+  }
+}
