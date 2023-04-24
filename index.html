@@ -59,72 +59,81 @@
                 </div>
             </div>
             <div class="calculatorBloks">
-                <div class="inputBlock">
-                    <div class="itemInputBlock">
-                        <div class="titlItem">
-                            <div class="text">
-                                <input type="text" placeholder="Name of your">
-                                <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
-                            </div>
-                            <div class="price">
-                                <p>UAH 0.00</p>
-                                <button class="openItem"><i class="fa-solid fa-chevron-up"></i></button>
-                            </div>
-                        </div>
-                        <div class="contentInput">
-                            <hr>
-                            <div class="categoryItem">
-                                <div class="titleCategoryItem">
-                                    <h5>Value</h5>
-                                    <div class="priceCategoryItem">
-                                        <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
-                                        <button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>
-                                    </div>
+                <div class="inputCalc">
+                    <div class="contantItems">
+                        <div class="itemInputBlock">
+                            <div class="titlItem">
+                                <div class="text">
+                                    <input type="text" placeholder="Name of your">
+                                    <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
                                 </div>
-                                <div class="contentCat">
-                                    <hr>
-                                    <div class="editCategory">
-                                        <div class="left">
-                                            <div class="blockEdit">
-                                                <p>Name:</p>
-                                                <div class="input">
-                                                    <input type="text" placeholder="Enter name" class="btneditname">
-                                                    <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <div class="price">
+                                    <p>UAH <span class="priceTotalItem">0.00</span></p>
+                                    <button class="openItem"><i class="fa-solid fa-chevron-up"></i></button>
+                                </div>
+                            </div>
+                            <div class="contentInput">
+                                <hr>
+                                <div class="inputsSec">
+                                    <div class="categoryItem">
+                                        <div class="titleCategoryItem">
+                                            <h5>Value</h5>
+                                            <div class="priceCategoryItem">
+                                                <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
+                                                <button class="openCategory"><!--<i class="fa-solid fa-chevron-up">--></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="contentCat">
+                                            <hr>
+                                            <div class="editCategory">
+                                                <div class="left">
+                                                    <div class="blockEdit">
+                                                        <p>Name:</p>
+                                                        <div class="input">
+                                                            <input type="text" placeholder="Enter name" class="btneditname">
+                                                            <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="remove">
+                                                        <!-- <button class="removeBtn">Remove Category</button> -->
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <div class="blockEdit">
+                                                        <p>Currency:</p>
+                                                        <select name="" id="" class="selectCur">
+                                                            <option value="UAH">UAH</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="PLN">PLN</option>
+                                                            <option value="EUR">EUR</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="blockEdit">
+                                                        <p>Price:</p>
+                                                        <div class="input">
+                                                            <input type="number" placeholder="Enter value" class="btneditprice editCat">
+                                                            <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="right">
-                                            <div class="blockEdit">
-                                                <p>Currency:</p>
-                                                <select name="" id="" class="selectCur">
-                                                    <option value="UAH">UAH</option>
-                                                    <option value="USD">USD</option>
-                                                    <option value="PLN">PLN</option>
-                                                    <option value="EUR">EUR</option>
-                                                </select>
-                                            </div>
-                                            <div class="blockEdit">
-                                                <p>Price:</p>
-                                                <div class="input">
-                                                    <input type="number" placeholder="Enter value" class="btneditprice">
-                                                    <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
+                                <button class="addNewCategory">Add new<span><i class="fa-solid fa-plus"></i></span></button>
+                                <!-- <button class="calculateItem">Calculate</button> -->
                             </div>
-                            <button class="addNewCategory">Add new <span><i class="fa-solid fa-plus"></i></span></button>
                         </div>
                     </div>
+                    <button class="addNewItem">Add new<span><i class="fa-solid fa-plus"></i></span></button>
                 </div>
-                <div class="resultBlock">
+                <div class="resultCalc">
 
                 </div>
             </div>
         </section>
     </main>
     <script src="https://kit.fontawesome.com/0e88421850.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scriptN.js"></script>
 </body>
 </html>

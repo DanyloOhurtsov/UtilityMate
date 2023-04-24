@@ -140,6 +140,17 @@ let nemw= [{"currencyCodeA":840,"currencyCodeB":980,"date":1681941674,"rateBuy":
         let selectCur = document.querySelectorAll('.selectCur');
         let btneditname = document.querySelectorAll('.btneditname');
         let btneditprice = document.querySelectorAll('.btneditprice');
+            
+            // ADD BLOCKS
+            let addNewCategoryBtn = document.querySelectorAll('.addNewCategory');
+        
+            // REMOVE BLOCKS
+            let removeBtn = document.querySelectorAll('.removeBtn');
+
+            // MATHEMATIC
+            let priceTotalItem = document.querySelector('.priceTotalItem');
+            let valueTotalItem = 0;
+            let calculateItemBtn = document.querySelectorAll('.calculateItem');
 
         // RESULT SECTION
 
@@ -329,8 +340,7 @@ let nemw= [{"currencyCodeA":840,"currencyCodeB":980,"date":1681941674,"rateBuy":
                 })
                 let number = this.closest('.categoryItem').querySelector('.priceCategoryItem .numb');
                 input.addEventListener('input', function(){
-                    let value = input.value;
-                    number.innerText = value;
+                    number.innerText = input.value;
                 })
             })
         };
@@ -347,7 +357,91 @@ let nemw= [{"currencyCodeA":840,"currencyCodeB":980,"date":1681941674,"rateBuy":
                 })
             })
         };
-        
+
+            // ADD BLOCKS
+            function addNewCategoryFunc(item){
+                item.addEventListener('click', function(){
+                    let parentBig = this.closest('.contentInput');
+                    let parentSmall = parentBig.querySelector('.inputsSec');
+                    let Newdiv = document.createElement('div');
+                    Newdiv.classList.add('categoryItem');
+                    Newdiv.innerHTML =`
+                    <div class="titleCategoryItem">
+                        <h5>Value</h5>
+                        <div class="priceCategoryItem">
+                            <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
+                            <button class="openCategory"><!--<i class="fa-solid fa-chevron-up">--></i></button>
+                        </div>
+                    </div>
+                    <div class="contentCat">
+                        <hr>
+                        <div class="editCategory">
+                            <div class="left">
+                                <div class="blockEdit">
+                                    <p>Name:</p>
+                                    <div class="input">
+                                        <input type="text" placeholder="Enter name" class="btneditname">
+                                        <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
+                                    </div>
+                                </div>
+                                <div class="remove">
+                                    <button class="removeBtn">Remove Category</button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="blockEdit">
+                                    <p>Currency:</p>
+                                    <select name="" id="" class="selectCur">
+                                        <option value="UAH">UAH</option>
+                                        <option value="USD">USD</option>
+                                        <option value="PLN">PLN</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                                <div class="blockEdit">
+                                    <p>Price:</p>
+                                    <div class="input">
+                                        <input type="number" placeholder="Enter value" class="btneditprice editCat">
+                                        <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                    parentSmall.appendChild(Newdiv);
+                    parentBig.style.maxHeight = parentBig.scrollHeight+'px';
+                    removeBtn = document.querySelectorAll('.removeBtn');
+                    function removeFunc(itemss){
+                        itemss.addEventListener('click', function(){
+                            let removePer = this.closest('.categoryItem')
+                            removePer.remove();
+                        })
+                    }
+                    removeBtn.forEach(item => removeFunc(item, removeBtn));
+                })
+                item.addEventListener('click', function(){
+                    let removePer = this.closest('.categoryItem')
+                    removePer.remove();
+                })
+            }
+            
+            // MATHEMATIC
+            function editCatFunc(item){
+                item.addEventListener('click',function(){
+                    valueTotalItem = 0;
+                    valueTotalItem = item.value;
+
+                    // let parentBig = item.closest('.inputBlock');
+                    // let allInputs = parentBig.querySelectorAll('.editCat');
+                    // allInputs.forEach(i => {
+                    //     valueTotalItem += Number(i.value)
+                    // })
+                })
+            }
+
+
+
         // RESULT SECTION
 
 
@@ -366,9 +460,30 @@ let nemw= [{"currencyCodeA":840,"currencyCodeB":980,"date":1681941674,"rateBuy":
         // INPUT SECTION
         openItemBtn.forEach(item => openItemFunc(item));
         editTitleBtn.forEach(item => editTitleFunc(item));
-        openCategoryBtn.forEach(item => openCategoryFunc(item));
+        // openCategoryBtn.forEach(item => openCategoryFunc(item));
         btneditname.forEach(item => changingNameEditBlock(item));
         selectCur.forEach(item => changingCurrencyEditBlock(item));
         btneditprice.forEach(item => changingValueEditBlock(item));
+            // ADD BLOCKS
+            addNewCategoryBtn.forEach(item => addNewCategoryFunc(item));
+            // REMOVE BLOCKS
+            removeBtn.forEach(item => removeFunc(item));
+            // MATHEMATIC
+            calculateItemBtn.forEach(item => editCatFunc(item));
         
         // RESULT SECTION
+
+
+
+        // 
+        let test = document.querySelectorAll('.editCat')
+        test.forEach(item=>{
+            item.addEventListener('input',function(){
+                console.log(item.value)
+                let parent = item.closest('.inputsSec').querySelectorAll('.editCat');
+                console.log(parent)
+            })
+        })
+
+
+

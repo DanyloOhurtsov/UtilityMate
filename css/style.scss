@@ -175,210 +175,286 @@ main{
             display: flex;
             margin-top: 64px;
             justify-content: space-between;
-            .inputBlock{
+            .inputCalc{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
                 width: 48%;
-                padding: 24px;
-                border-radius: 24px;
-                background-color: $color65;
-                // max-height: 0;
-                transition: 500ms;
-                .itemInputBlock{
-                    .titlItem{
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        .text{
-                            gap: 16px;
+                .contantItems{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .itemInputBlock{
+                        width: 100%;
+                        padding: 24px;
+                        border-radius: 24px;
+                        background-color: $color65;
+                        transition: 500ms;
+                        .titlItem{
                             display: flex;
                             align-items: center;
-                            input{
-                                border: none;
-                                outline: none;
+                            justify-content: space-between;
+                            .text{
+                                gap: 16px;
+                                display: flex;
+                                align-items: center;
+                                input{
+                                    border: none;
+                                    outline: none;
+                                    display: flex;
+                                    color: $colorFF;
+                                    background: none;
+                                    font-family: $family;
+                                    font-size: $font-size24;
+                                    line-height: $font-height33;
+                                    font-weight: $font-weight500;
+                                }
+                                input::placeholder{
+                                    color: $colorFF;
+                                }
+                                .editTitle{
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    color: $colorFF;
+                                    background: none;
+                                    font-size: $font-size18;
+                                }
+                            }
+                            .price{
+                                gap: 24px;
                                 display: flex;
                                 color: $colorFF;
-                                background: none;
+                                align-items: center;
                                 font-family: $family;
                                 font-size: $font-size24;
                                 line-height: $font-height33;
                                 font-weight: $font-weight500;
-                            }
-                            input::placeholder{
-                                color: $colorFF;
-                            }
-                            .editTitle{
-                                border: none;
-                                outline: none;
-                                cursor: pointer;
-                                color: $colorFF;
-                                background: none;
-                                font-size: $font-size18;
+                                .openItem{
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    color: $colorFF;
+                                    background: none;
+                                    font-size: $font-size18;
+                                }
                             }
                         }
-                        .price{
-                            gap: 24px;
-                            display: flex;
-                            color: $colorFF;
-                            align-items: center;
-                            font-family: $family;
-                            font-size: $font-size24;
-                            line-height: $font-height33;
-                            font-weight: $font-weight500;
-                            .openItem{
-                                border: none;
-                                outline: none;
-                                cursor: pointer;
+                        .contentInput{
+                            // max-height: 0;
+                            overflow: hidden;
+                            transition: 500ms;
+                            hr{
                                 color: $colorFF;
-                                background: none;
-                                font-size: $font-size18;
+                                margin-top: 8px;
+                                border-radius: 1px;
+                                border: 1px solid $colorFF;
                             }
-                        }
-                    }
-                    .contentInput{
-                        max-height: 0;
-                        overflow: hidden;
-                        transition: 500ms;
-                        hr{
-                            color: $colorFF;
-                            margin-top: 8px;
-                            border-radius: 1px;
-                            border: 1px solid $colorFF;
-                        }
-                        .categoryItem{
-                            padding: 16px;
-                            margin-top: 16px;
-                            border-radius: 24px;
-                            background-color: $colorFF;
-                            .titleCategoryItem{
+                            .inputsSec{
                                 display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                h5{
-                                    font-family: $family;
-                                    font-size: $font-size16;
-                                    font-style: $font-styleNor;
-                                    line-height: $font-height22;
-                                    font-weight: $font-weight700;
-                                }
-                                .priceCategoryItem{
-                                    gap: 16px;
-                                    display: flex;
-                                    font-family: $family;
-                                    align-content: inherit;
-                                    font-size: $font-size16;
-                                    font-style: $font-styleNor;
-                                    line-height: $font-height22;
-                                    font-weight: $font-weight700;
-                                    .openCategory{
-                                        border: none;
+                                flex-direction: column;
+                                margin-top: 16px;
+                                gap: 16px;
+                                .categoryItem{
+                                    padding: 16px;
+                                    border-radius: 24px;
+                                    background-color: $colorFF;
+                                    .titleCategoryItem{
                                         display: flex;
-                                        outline: none;
-                                        cursor: pointer;
-                                        background: none;
                                         align-items: center;
-                                        font-size: $font-size16;
-                                        justify-content: center;
-                                    }
-                                }
-                            }
-                            .contentCat{
-                                max-height: scrollHeight;
-                                transition: 500ms;
-                                overflow: hidden;
-                                hr{
-                                    border: 1px solid $colorCC;
-                                }
-                                .editCategory{
-                                    display: flex;
-                                    margin-top: 8px;
-                                    justify-content: space-between;
-                                    .left, .right{
-                                        gap: 16px;
-                                        width: 50%;
-                                        width: 200px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        .blockEdit{
-                                            width: 100%;
-                                            display: flex;
-                                            align-items: center;
+                                        justify-content: space-between;
+                                        h5{
                                             font-family: $family;
                                             font-size: $font-size16;
                                             font-style: $font-styleNor;
                                             line-height: $font-height22;
                                             font-weight: $font-weight700;
-                                            justify-content: space-between;
-                                            .input{
-                                                gap: 8px;
-                                                width: 150px;
+                                        }
+                                        .priceCategoryItem{
+                                            gap: 16px;
+                                            display: flex;
+                                            font-family: $family;
+                                            align-content: inherit;
+                                            font-size: $font-size16;
+                                            font-style: $font-styleNor;
+                                            line-height: $font-height22;
+                                            font-weight: $font-weight700;
+                                            .openCategory{
+                                                border: none;
                                                 display: flex;
-                                                justify-content: end;
-                                                input{
-                                                    width: 100px;
-                                                    border: none;
-                                                    outline: none;
-                                                    background: none;
+                                                outline: none;
+                                                cursor: pointer;
+                                                background: none;
+                                                align-items: center;
+                                                font-size: $font-size16;
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .contentCat{
+                                        max-height: scrollHeight;
+                                        transition: 500ms;
+                                        overflow: hidden;
+                                        hr{
+                                            border: 1px solid $colorCC;
+                                        }
+                                        .editCategory{
+                                            display: flex;
+                                            margin-top: 8px;
+                                            justify-content: space-between;
+                                            .left, .right{
+                                                gap: 16px;
+                                                width: 50%;
+                                                width: 200px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                .blockEdit{
+                                                    width: 100%;
+                                                    display: flex;
+                                                    align-items: center;
                                                     font-family: $family;
                                                     font-size: $font-size16;
                                                     font-style: $font-styleNor;
                                                     line-height: $font-height22;
-                                                    font-weight: $font-weight400;
-                                                    border-bottom: 0.5px solid $color95;
-                                                }
-                                                .editPrice, .editName{
-                                                    border: none;
-                                                    outline: none;
-                                                    cursor: pointer;
-                                                    background: none;
-                                                    font-size: $font-size16;
+                                                    font-weight: $font-weight700;
+                                                    justify-content: space-between;
+                                                    .input{
+                                                        gap: 8px;
+                                                        width: 150px;
+                                                        display: flex;
+                                                        justify-content: end;
+                                                        input{
+                                                            width: 100px;
+                                                            border: none;
+                                                            outline: none;
+                                                            background: none;
+                                                            font-family: $family;
+                                                            font-size: $font-size16;
+                                                            font-style: $font-styleNor;
+                                                            line-height: $font-height22;
+                                                            font-weight: $font-weight400;
+                                                            border-bottom: 0.5px solid $color95;
+                                                        }
+                                                        .editPrice, .editName{
+                                                            border: none;
+                                                            outline: none;
+                                                            cursor: pointer;
+                                                            background: none;
+                                                            font-size: $font-size16;
+                                                        }
+                                                    }
+                                                    select{
+                                                        border: none;
+                                                        outline: none;
+                                                        cursor: pointer;
+                                                        background: none;
+                                                        font-family: $family;
+                                                        font-size: $font-size16;
+                                                        font-style: $font-styleNor;
+                                                        line-height: $font-height22;
+                                                        font-weight: $font-weight400;
+                                                    }
                                                 }
                                             }
-                                            select{
-                                                border: none;
-                                                outline: none;
-                                                cursor: pointer;
-                                                background: none;
-                                                font-family: $family;
-                                                font-size: $font-size16;
-                                                font-style: $font-styleNor;
-                                                line-height: $font-height22;
-                                                font-weight: $font-weight400;
+                                            .left {
+                                                .removeBtn{
+                                                    width: 100%;
+                                                    height: 24px;
+                                                    border: none;
+                                                    color: $colorRed;
+                                                    background: none;
+                                                    transition: 500ms;
+                                                    border-radius: 24px;
+                                                    background-color: $colorPink;
+                                                }
+                                                .removeBtn:hover{
+                                                    color: $colorFF;
+                                                    background-color: $colorRed;
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
-                        }
-                        // addNewCategory
-                        .addNewCategory{
-                            gap: 24px;
-                            width: 100%;
-                            height: 56px;
-                            border: none;
-                            outline: none;
-                            display: flex;
-                            color: $color8B;
-                            cursor: pointer;
-                            margin-top: 16px;
-                            background: none;
-                            border-radius: 24px;
-                            align-items: center;
-                            font-family: $family;
-                            font-size: $font-size16;
-                            justify-content: center;
-                            background-color: $colorFF;
-                            font-style: $font-styleNor;
-                            line-height: $font-height22;
-                            font-weight: $font-weight400;
-                            span{
-                                width: 24px;
-                                height: 24px;
+                            .addNewCategory{
+                                gap: 16px;
                                 display: flex;
-                                border-radius: 50%;
                                 align-items: center;
                                 justify-content: center;
-                                border: 1px solid $color8B;
+                                width: 100%;
+                                height: 56px;
+                                border: none;
+                                outline: none;
+                                margin-top: 16px;
+                                background: none;
+                                border-radius: 24px;
+                                background-color: $colorFF;
+                                color: $color8B;
+                                cursor: pointer;
+                                font-family: $family;
+                                font-size: $font-size16;
+                                font-style: $font-styleNor;
+                                line-height: $font-height22;
+                                font-weight: $font-weight400;
+                                span{
+                                    width: 24px;
+                                    height: 24px;
+                                    display: flex;
+                                    border-radius: 50%;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 1px solid $color8B;
+                                }
+                            }
+                            .removeItem{
+                                background: none;
+                                border: none;
+                                width: 150px;
+                                background-color: $colorPink;
+                                color: $colorRed;
+                                cursor: pointer;
+                                font-family: $family;
+                                font-size: $font-size16;
+                                font-style: $font-styleNor;
+                                line-height: $font-height22;
+                                font-weight: $font-weight400;
+                                height: 40px;
+                                gap: 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 16px;
+                                border-radius: 24px;
                             }
                         }
+                    }
+                }
+                .addNewItem{
+                    width: 100%;
+                    height: 56px;
+                    background: none;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 24px;
+                    background-color: $color65;
+                    color: $colorFF;
+                    gap: 16px;
+                    font-style: $font-styleNor;
+                    line-height: $font-height22;
+                    font-weight: $font-weight400;
+                    font-family: $family;
+                    font-size: $font-size16;
+                    cursor: pointer;
+                    span{
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        border-radius: 50%;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $colorFF;
                     }
                 }
             }
