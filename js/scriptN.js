@@ -1,5 +1,4 @@
 // ________________________________ RATE SECTION ________________________________ \\
-function rateSectionFunc(){
     // ________________ CURRENCY
         // VARIABLEs
         let currencyChageRate = document.querySelector('.currencyChageRate');
@@ -121,12 +120,13 @@ function rateSectionFunc(){
         // FUNCTIONS
         function getDate(){
             let currentDate = new Date();
-            let day = currentDate.getDay();
+            let day = currentDate.getDate();
                 if(day<10){
                     day='0'+day;
                 }
             let month = currentDate.getMonth();
                 if(month<10){
+                    month++;
                     month='0'+month;
                 }
             let year = currentDate.getFullYear();
@@ -146,97 +146,112 @@ function rateSectionFunc(){
                     seconds='0'+seconds;
                 }
             let Now = day+"."+month+ "."+year+"  "+hour+":"+minutes+":"+seconds;
-            timeValue.innerText = Now
+            timeValue.innerText = Now;
         }
         // EXECUTION OF FUNCTIONs
         setInterval(getDate, 1000);
-}
-rateSectionFunc();
 
 // ________________________________ CALCULATOR ________________________________ \\
 function calculatorFunc(){
+    // OPEN CLOSE ITEM
+    let openItemBtn = document.querySelectorAll('.openItem');
+    function openItemFunc(item){
+            item.addEventListener('click', function(){
+                let content = this.closest('.itemInputBlock').querySelector('.contentInput');
+                this.classList.toggle('active');
+                if(this.classList.contains('active')){
+                    content.style.maxHeight = 0;
+                } else{
+                    content.style.maxHeight = content.scrollHeight+'px'
+                }
+                this.classList.toggle('rotate')
+            })
+        }
+    openItemBtn.forEach(item=>openItemFunc(item))
+    
     // ITEM
-    let addNewItemBtn = document.querySelector('.addNewItem');
+        let addNewItemBtn = document.querySelector('.addNewItem');
     function addNewItemFunc(){
-        // ITEM
-            // ADD ITEM
-            let parent = this.closest('.inputCalc').querySelector('.contantItems');
-            let newItem = document.createElement('div');
-            newItem.classList.add('itemInputBlock');
-            newItem.innerHTML = `
-            <div class="titlItem">
-                <div class="text">
-                    <input type="text" placeholder="Name of your">
-                    <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
-                </div>
-                <div class="price">
-                    <p>UAH <span class="priceTotalItem">0.00</span></p>
-                    <button class="openItem"><i class="fa-solid fa-chevron-up"></i></button>
-                </div>
+        // ADD ITEM
+        let parent = this.closest('.inputCalc').querySelector('.contantItems');
+        let newItem = document.createElement('div');
+        newItem.classList.add('itemInputBlock');
+        newItem.innerHTML = `
+        <div class="titlItem">
+            <div class="text">
+                <input type="text" placeholder="Name of your">
+                <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
             </div>
-            <div class="contentInput">
-                <hr>
-                <div class="inputsSec">
-                    <div class="categoryItem">
-                        <div class="titleCategoryItem">
-                            <h5>Value</h5>
-                            <div class="priceCategoryItem">
-                                <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
-                                <button class="openCategory"><!--<i class="fa-solid fa-chevron-up">--></i></button>
-                            </div>
+            <div class="price">
+                <p>UAH <span class="priceTotalItem">0.00</span></p>
+                <button class="openItem"><i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+        </div>
+        <div class="contentInput">
+            <hr>
+            <div class="inputsSec">
+                <div class="categoryItem">
+                    <div class="titleCategoryItem">
+                        <h5>Value</h5>
+                        <div class="priceCategoryItem">
+                            <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
+                            <button class="openCategory"><!--<i class="fa-solid fa-chevron-up">--></i></button>
                         </div>
-                        <div class="contentCat">
-                            <hr>
-                            <div class="editCategory">
-                                <div class="left">
-                                    <div class="blockEdit">
-                                        <p>Name:</p>
-                                        <div class="input">
-                                            <input type="text" placeholder="Enter name" class="btneditname">
-                                            <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="remove">
-                                        <!-- <button class="removeBtn">Remove Category</button> -->
+                    </div>
+                    <div class="contentCat">
+                        <hr>
+                        <div class="editCategory">
+                            <div class="left">
+                                <div class="blockEdit">
+                                    <p>Name:</p>
+                                    <div class="input">
+                                        <input type="text" placeholder="Enter name" class="btneditname">
+                                        <button class="editName btneditname"><i class="fa-regular fa-pen-to-square"></i></button>
                                     </div>
                                 </div>
-                                <div class="right">
-                                    <div class="blockEdit">
-                                        <p>Currency:</p>
-                                        <select name="" id="" class="selectCur">
-                                            <option value="UAH">UAH</option>
-                                            <option value="USD">USD</option>
-                                            <option value="PLN">PLN</option>
-                                            <option value="EUR">EUR</option>
-                                        </select>
-                                    </div>
-                                    <div class="blockEdit">
-                                        <p>Price:</p>
-                                        <div class="input">
-                                            <input type="number" placeholder="Enter value" class="btneditprice editCat">
-                                            <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
-                                        </div>
+                                <div class="remove">
+                                    <!-- <button class="removeBtn">Remove Category</button> -->
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="blockEdit">
+                                    <p>Currency:</p>
+                                    <select name="" id="" class="selectCur">
+                                        <option value="UAH">UAH</option>
+                                        <option value="USD">USD</option>
+                                        <option value="PLN">PLN</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                                <div class="blockEdit">
+                                    <p>Price:</p>
+                                    <div class="input">
+                                        <input type="number" placeholder="Enter value" class="btneditprice editCat">
+                                        <button class="editPrice btneditprice"><i class="fa-regular fa-pen-to-square"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="addNewCategory">Add new<span><i class="fa-solid fa-plus"></i></span></button>
-                <button class="removeItem">Remove<span><i class="fa-solid fa-trash"></i></span></button>
             </div>
-            `
-            parent.appendChild(newItem)
-            
-            // REMOVE ITEM
-            let removeItemBtn = document.querySelectorAll('.removeItem');
-            function removeItemFunc(item){
-                item.addEventListener('click',function(){
-                    this.closest('.itemInputBlock').remove();
-                })
-            }
-            removeItemBtn.forEach(item=>removeItemFunc(item));
-            categoryFunc();
+            <button class="addNewCategory">Add new<span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="removeItem">Remove<span><i class="fa-solid fa-trash"></i></span></button>
+        </div>
+        `
+        parent.appendChild(newItem)
+        // REMOVE ITEM
+        let removeItemBtn = document.querySelectorAll('.removeItem');
+        function removeItemFunc(item){
+            item.addEventListener('click',function(){
+                this.closest('.itemInputBlock').remove();
+            })
+        }
+        removeItemBtn.forEach(item=>removeItemFunc(item));
+        categoryFunc();
+        // OPEN CLOSE ITEM
+        openItemBtn = document.querySelectorAll('.openItem');
+        openItemBtn.forEach(item=>openItemFunc(item))
     }
     addNewItemBtn.addEventListener('click', addNewItemFunc);
 
