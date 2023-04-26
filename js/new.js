@@ -1,4 +1,9 @@
 let nemw = [{"currencyCodeA":840,"currencyCodeB":980,"date":1682460074,"rateBuy":36.65,"rateCross":0,"rateSell":37.4406},{"currencyCodeA":978,"currencyCodeB":980,"date":1682513174,"rateBuy":40.45,"rateCross":0,"rateSell":41.6008},{"currencyCodeA":978,"currencyCodeB":840,"date":1682513174,"rateBuy":1.096,"rateCross":0,"rateSell":1.109},{"currencyCodeA":826,"currencyCodeB":980,"date":1682516003,"rateBuy":0,"rateCross":46.8478,"rateSell":0},{"currencyCodeA":392,"currencyCodeB":980,"date":1682515958,"rateBuy":0,"rateCross":0.28,"rateSell":0},{"currencyCodeA":756,"currencyCodeB":980,"date":1682515931,"rateBuy":0,"rateCross":42.3306,"rateSell":0},{"currencyCodeA":156,"currencyCodeB":980,"date":1682515931,"rateBuy":0,"rateCross":5.4027,"rateSell":0},{"currencyCodeA":784,"currencyCodeB":980,"date":1682515997,"rateBuy":0,"rateCross":10.1922,"rateSell":0},{"currencyCodeA":971,"currencyCodeB":980,"date":1663425223,"rateBuy":0,"rateCross":0.4252,"rateSell":0},{"currencyCodeA":8,"currencyCodeB":980,"date":1682514806,"rateBuy":0,"rateCross":0.3717,"rateSell":0},{"currencyCodeA":51,"currencyCodeB":980,"date":1682515900,"rateBuy":0,"rateCross":0.0973,"rateSell":0},{"currencyCodeA":973,"currencyCodeB":980,"date":1682258448,"rateBuy":0,"rateCross":0.0739,"rateSell":0},{"currencyCodeA":32,"currencyCodeB":980,"date":1682515983,"rateBuy":0,"rateCross":0.1696,"rateSell":0},{"currencyCodeA":36,"currencyCodeB":980,"date":1682515692,"rateBuy":0,"rateCross":25.1171,"rateSell":0},{"currencyCodeA":944,"currencyCodeB":980,"date":1682515948,"rateBuy":0,"rateCross":21.9918,"rateSell":0},{"currencyCodeA":50,"currencyCodeB":980,"date":1682515294,"rateBuy":0,"rateCross":0.3481,"rateSell":0},{"currencyCodeA":975,"currencyCodeB":980,"date":1682515998,"rateBuy":0,"rateCross":21.0192,"rateSell":0},{"currencyCodeA":48,"currencyCodeB":980,"date":1682515113,"rateBuy":0,"rateCross":99.59,"rateSell":0},{"currencyCodeA":108,"currencyCodeB":980,"date":1538606522,"rateBuy":0,"rateCross":0.0158,"rateSell":0},{"currencyCodeA":96,"currencyCodeB":980,"date":1681712199,"rateBuy":0,"rateCross":28.363,"rateSell":0},{"currencyCodeA":68,"currencyCodeB":980,"date":1682450658,"rateBuy":0,"rateCross":5.4574,"rateSell":0},{"currencyCodeA":986,"currencyCodeB":980,"date":1682515518,"rateBuy":0,"rateCross":7.4541,"rateSell":0},{"currencyCodeA":72,"currencyCodeB":980,"date":1681978995,"rateBuy":0,"rateCross":2.8521,"rateSell":0},{"currencyCodeA":933,"currencyCodeB":980,"date":1682487368,"rateBuy":0,"rateCross":12.7441,"rateSell":0},{"currencyCodeA":124,"currencyCodeB":980,"date":1682515969,"rateBuy":0,"rateCross":27.6846,"rateSell":0},{"currencyCodeA":976,"currencyCodeB":980,"date":1655462332,"rateBuy":0,"rateCross":0.0163,"rateSell":0},{"currencyCodeA":152,"currencyCodeB":980,"date":1682482642,"rateBuy":0,"rateCross":0.0461,"rateSell":0},{"currencyCodeA":170,"currencyCodeB":980,"date":1682515041,"rateBuy":0,"rateCross":0.0083,"rateSell":0},{"currencyCodeA":188,"currencyCodeB":980,"date":1682465768,"rateBuy":0,"rateCross":0.0706,"rateSell":0},{"currencyCodeA":192,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":1.5237,"rateSell":0},{"currencyCodeA":203,"currencyCodeB":980,"date":1682516002,"rateBuy":0,"rateCross":1.7662,"rateSell":0},{"currencyCodeA":262,"currencyCodeB":980,"date":1678810696,"rateBuy":0,"rateCross":0.2108,"rateSell":0},{"currencyCodeA":208,"currencyCodeB":980,"date":1682515986,"rateBuy":0,"rateCross":5.5593,"rateSell":0},{"currencyCodeA":12,"currencyCodeB":980,"date":1682511552,"rateBuy":0,"rateCross":0.2767,"rateSell":0},{"currencyCodeA":818,"currencyCodeB":980,"date":1682515937,"rateBuy":0,"rateCross":1.2141,"rateSell":0},{"currencyCodeA":230,"currencyCodeB":980,"date":1682417764,"rateBuy":0,"rateCross":0.692,"rateSell":0},{"currencyCodeA":981,"currencyCodeB":980,"date":1682516003,"rateBuy":0,"rateCross":15.1736,"rateSell":0},{"currencyCodeA":936,"currencyCodeB":980,"date":1682514950,"rateBuy":0,"rateCross":3.1451,"rateSell":0},{"currencyCodeA":270,"currencyCodeB":980,"date":1682288296,"rateBuy":0,"rateCross":0.6324,"rateSell":0},{"currencyCodeA":324,"currencyCodeB":980,"date":1681911999,"rateBuy":0,"rateCross":0.0044,"rateSell":0},{"currencyCodeA":344,"currencyCodeB":980,"date":1682514458,"rateBuy":0,"rateCross":4.7712,"rateSell":0},{"currencyCodeA":191,"currencyCodeB":980,"date":1680625280,"rateBuy":0,"rateCross":5.4258,"rateSell":0},{"currencyCodeA":348,"currencyCodeB":980,"date":1682515991,"rateBuy":0,"rateCross":0.1103,"rateSell":0},{"currencyCodeA":360,"currencyCodeB":980,"date":1682515997,"rateBuy":0,"rateCross":0.0025,"rateSell":0},{"currencyCodeA":376,"currencyCodeB":980,"date":1682515997,"rateBuy":0,"rateCross":10.3486,"rateSell":0},{"currencyCodeA":356,"currencyCodeB":980,"date":1682515978,"rateBuy":0,"rateCross":0.4581,"rateSell":0},{"currencyCodeA":368,"currencyCodeB":980,"date":1682513816,"rateBuy":0,"rateCross":0.0285,"rateSell":0},{"currencyCodeA":364,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.0009,"rateSell":0},{"currencyCodeA":352,"currencyCodeB":980,"date":1682513090,"rateBuy":0,"rateCross":0.274,"rateSell":0},{"currencyCodeA":400,"currencyCodeB":980,"date":1682514664,"rateBuy":0,"rateCross":52.8478,"rateSell":0},{"currencyCodeA":404,"currencyCodeB":980,"date":1682515933,"rateBuy":0,"rateCross":0.276,"rateSell":0},{"currencyCodeA":417,"currencyCodeB":980,"date":1682514133,"rateBuy":0,"rateCross":0.4281,"rateSell":0},{"currencyCodeA":116,"currencyCodeB":980,"date":1682515604,"rateBuy":0,"rateCross":0.0091,"rateSell":0},{"currencyCodeA":408,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":16.6221,"rateSell":0},{"currencyCodeA":410,"currencyCodeB":980,"date":1682515611,"rateBuy":0,"rateCross":0.0281,"rateSell":0},{"currencyCodeA":414,"currencyCodeB":980,"date":1682512849,"rateBuy":0,"rateCross":122.4181,"rateSell":0},{"currencyCodeA":398,"currencyCodeB":980,"date":1682515951,"rateBuy":0,"rateCross":0.0825,"rateSell":0},{"currencyCodeA":418,"currencyCodeB":980,"date":1682490016,"rateBuy":0,"rateCross":0.0022,"rateSell":0},{"currencyCodeA":422,"currencyCodeB":980,"date":1678882171,"rateBuy":0,"rateCross":0.0004,"rateSell":0},{"currencyCodeA":144,"currencyCodeB":980,"date":1682514468,"rateBuy":0,"rateCross":0.1163,"rateSell":0},{"currencyCodeA":434,"currencyCodeB":980,"date":1674670757,"rateBuy":0,"rateCross":7.8783,"rateSell":0},{"currencyCodeA":504,"currencyCodeB":980,"date":1682514213,"rateBuy":0,"rateCross":3.7075,"rateSell":0},{"currencyCodeA":498,"currencyCodeB":980,"date":1682515996,"rateBuy":0,"rateCross":2.0837,"rateSell":0},{"currencyCodeA":969,"currencyCodeB":980,"date":1682183421,"rateBuy":0,"rateCross":0.0085,"rateSell":0},{"currencyCodeA":807,"currencyCodeB":980,"date":1682515993,"rateBuy":0,"rateCross":0.6704,"rateSell":0},{"currencyCodeA":496,"currencyCodeB":980,"date":1682509812,"rateBuy":0,"rateCross":0.0107,"rateSell":0},{"currencyCodeA":478,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.1074,"rateSell":0},{"currencyCodeA":480,"currencyCodeB":980,"date":1682511039,"rateBuy":0,"rateCross":0.8302,"rateSell":0},{"currencyCodeA":454,"currencyCodeB":980,"date":1678369785,"rateBuy":0,"rateCross":0.0368,"rateSell":0},{"currencyCodeA":484,"currencyCodeB":980,"date":1682515248,"rateBuy":0,"rateCross":2.0867,"rateSell":0},{"currencyCodeA":458,"currencyCodeB":980,"date":1682515520,"rateBuy":0,"rateCross":8.4699,"rateSell":0},{"currencyCodeA":943,"currencyCodeB":980,"date":1682512766,"rateBuy":0,"rateCross":0.5921,"rateSell":0},{"currencyCodeA":516,"currencyCodeB":980,"date":1682513858,"rateBuy":0,"rateCross":2.0669,"rateSell":0},{"currencyCodeA":566,"currencyCodeB":980,"date":1682511036,"rateBuy":0,"rateCross":0.0809,"rateSell":0},{"currencyCodeA":558,"currencyCodeB":980,"date":1682461870,"rateBuy":0,"rateCross":1.0356,"rateSell":0},{"currencyCodeA":578,"currencyCodeB":980,"date":1682515984,"rateBuy":0,"rateCross":3.5863,"rateSell":0},{"currencyCodeA":524,"currencyCodeB":980,"date":1682513344,"rateBuy":0,"rateCross":0.2853,"rateSell":0},{"currencyCodeA":554,"currencyCodeB":980,"date":1682498894,"rateBuy":0,"rateCross":23.1795,"rateSell":0},{"currencyCodeA":512,"currencyCodeB":980,"date":1682446819,"rateBuy":0,"rateCross":97.2525,"rateSell":0},{"currencyCodeA":604,"currencyCodeB":980,"date":1682515669,"rateBuy":0,"rateCross":9.9749,"rateSell":0},{"currencyCodeA":608,"currencyCodeB":980,"date":1682514843,"rateBuy":0,"rateCross":0.6743,"rateSell":0},{"currencyCodeA":586,"currencyCodeB":980,"date":1682515943,"rateBuy":0,"rateCross":0.132,"rateSell":0},{"currencyCodeA":985,"currencyCodeB":980,"date":1682516006,"rateBuy":0,"rateCross":9.0117,"rateSell":0},{"currencyCodeA":600,"currencyCodeB":980,"date":1682515648,"rateBuy":0,"rateCross":0.0051,"rateSell":0},{"currencyCodeA":634,"currencyCodeB":980,"date":1682512433,"rateBuy":0,"rateCross":10.2858,"rateSell":0},{"currencyCodeA":946,"currencyCodeB":980,"date":1682516001,"rateBuy":0,"rateCross":8.4047,"rateSell":0},{"currencyCodeA":941,"currencyCodeB":980,"date":1682515306,"rateBuy":0,"rateCross":0.3508,"rateSell":0},{"currencyCodeA":682,"currencyCodeB":980,"date":1682515906,"rateBuy":0,"rateCross":9.9905,"rateSell":0},{"currencyCodeA":690,"currencyCodeB":980,"date":1682514003,"rateBuy":0,"rateCross":2.7534,"rateSell":0},{"currencyCodeA":938,"currencyCodeB":980,"date":1680961561,"rateBuy":0,"rateCross":0.0627,"rateSell":0},{"currencyCodeA":752,"currencyCodeB":980,"date":1682515986,"rateBuy":0,"rateCross":3.6608,"rateSell":0},{"currencyCodeA":702,"currencyCodeB":980,"date":1682515686,"rateBuy":0,"rateCross":28.1188,"rateSell":0},{"currencyCodeA":694,"currencyCodeB":980,"date":1664217991,"rateBuy":0,"rateCross":0.0024,"rateSell":0},{"currencyCodeA":706,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.0647,"rateSell":0},{"currencyCodeA":968,"currencyCodeB":980,"date":1680879569,"rateBuy":0,"rateCross":1.0284,"rateSell":0},{"currencyCodeA":760,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.0056,"rateSell":0},{"currencyCodeA":748,"currencyCodeB":980,"date":1668614714,"rateBuy":0,"rateCross":2.1898,"rateSell":0},{"currencyCodeA":764,"currencyCodeB":980,"date":1682516000,"rateBuy":0,"rateCross":1.0938,"rateSell":0},{"currencyCodeA":972,"currencyCodeB":980,"date":1682498237,"rateBuy":0,"rateCross":3.4303,"rateSell":0},{"currencyCodeA":795,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.0021,"rateSell":0},{"currencyCodeA":788,"currencyCodeB":980,"date":1682498435,"rateBuy":0,"rateCross":12.3726,"rateSell":0},{"currencyCodeA":949,"currencyCodeB":980,"date":1682516004,"rateBuy":0,"rateCross":1.93,"rateSell":0},{"currencyCodeA":901,"currencyCodeB":980,"date":1682515175,"rateBuy":0,"rateCross":1.219,"rateSell":0},{"currencyCodeA":834,"currencyCodeB":980,"date":1682513424,"rateBuy":0,"rateCross":0.0162,"rateSell":0},{"currencyCodeA":800,"currencyCodeB":980,"date":1682515159,"rateBuy":0,"rateCross":0.01,"rateSell":0},{"currencyCodeA":858,"currencyCodeB":980,"date":1682504614,"rateBuy":0,"rateCross":0.9666,"rateSell":0},{"currencyCodeA":860,"currencyCodeB":980,"date":1682515633,"rateBuy":0,"rateCross":0.0032,"rateSell":0},{"currencyCodeA":937,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":1.487,"rateSell":0},{"currencyCodeA":704,"currencyCodeB":980,"date":1682515903,"rateBuy":0,"rateCross":0.0015,"rateSell":0},{"currencyCodeA":950,"currencyCodeB":980,"date":1682449151,"rateBuy":0,"rateCross":0.0627,"rateSell":0},{"currencyCodeA":952,"currencyCodeB":980,"date":1682463395,"rateBuy":0,"rateCross":0.0631,"rateSell":0},{"currencyCodeA":886,"currencyCodeB":980,"date":1543715495,"rateBuy":0,"rateCross":0.112,"rateSell":0},{"currencyCodeA":710,"currencyCodeB":980,"date":1682512910,"rateBuy":0,"rateCross":2.0676,"rateSell":0},{"currencyCodeA":894,"currencyCodeB":980,"date":1682460005,"rateBuy":0,"rateCross":0.0021,"rateSell":0}];
+let MonoArrApi = 'https://api.monobank.ua/bank/currency';
+let NPBArrApi = 'http://api.nbp.pl/api/exchangerates/tables/a/last/5/';
+let NBUArrApi = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
+
+
 function ALL(){
     let NowUSD = 0;
     let NowEUR = 0;
@@ -23,7 +28,7 @@ function ALL(){
                 if(valueCurr=='Mono'){
                     // There is a limit on the number of requests to the server, the array saved in the "array.js" folder. Updated as of 04/20/2023
                         // OR API
-                    // let resMono = await fetch('https://api.monobank.ua/bank/currency');
+                    // let resMono = await fetch(MonoArrApi);
                     // let data = await resMono.json();
                     // let result = await data;
                     // console.log(result)
@@ -67,7 +72,7 @@ function ALL(){
                     insertPLNRate.innerText = arr.PLN;
                 };
                 if(valueCurr=='NBP'){
-                    let resNBP = await fetch('http://api.nbp.pl/api/exchangerates/tables/a/last/5/');
+                    let resNBP = await fetch(NPBArrApi);
                     let data = await resNBP.json();
                     let result = await data[4];
                     result = Object.values(result);
@@ -91,7 +96,7 @@ function ALL(){
                     insertPLNRate.innerText = (1/arr.UAH).toFixed(2)
                 };
                 if(valueCurr=='NBU'){
-                    let resNBU = await fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+                    let resNBU = await fetch(NBUArrApi);
                     let data = await resNBU.json();
                     let result = await data;
                     result.forEach(item => {
@@ -163,10 +168,13 @@ function ALL(){
     // _________________________________________________________________________________________________ CALCULATOR SECTION 105
     function CALCULATORFUNC(){
         let addNewItemBtn = document.querySelector('.addNewItem');
+        let numberF=0;
         addNewItemBtn.addEventListener('click',function(){
+            numberF++;
             let perentItem = this.closest('.inputCalc').querySelector('.contantItems');
             let newItem = document.createElement('div');
             newItem.classList.add('itemInputBlock');
+            newItem.id = 'resultItem'+numberF;
             newItem.innerHTML = `
             <div class="titlItem">
                 <div class="text">
@@ -186,7 +194,7 @@ function ALL(){
                             <h5 class="titleCategory">Name</h5>
                             <div class="priceCategoryItem">
                                 <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
-                                <button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>
+                                <!--<button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>-->
                             </div>
                         </div>
                         <div class="contentCat">
@@ -234,10 +242,19 @@ function ALL(){
             </div>
             `
             perentItem.appendChild(newItem);
+            let resultPerent = this.closest('.calculatorBloks').querySelector('.resultsIutput')
+            let newResultDiv = document.createElement('div');
+            newResultDiv.classList.add('itemResult');
+            newResultDiv.id = 'resultItem'+numberF;
+            newResultDiv.innerHTML = `
+                <h5>Value</h5>
+                <p>UAH<span class="itemResultValue">0.00</span></p>
+            `
+            resultPerent.appendChild(newResultDiv)
             // _______________________________________________________________________________ ITEM REMOVE FUNCTION 95
             let removeItemBtn = perentItem.querySelectorAll('.removeItem');
                 removeItemBtn.forEach(item=>removeItemFunc(item));
-            // _______________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 95 NOT WORK
+            // !_______________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 95 NOT WORK
             let openItemBtn = perentItem.querySelectorAll('.openItem');
                 // openItemBtn.forEach(item=>openItemFuncRem(item));
             // _______________________________________________________________________________ CATEGORY ADD FUNCTION 95
@@ -246,7 +263,7 @@ function ALL(){
             // _______________________________________________________________________________ CATEGORY REMOVE FUNCTION 95
             let removeCatBtn = document.querySelectorAll('.removeCat');
                 removeCatBtn.forEach(item=>removeCatFunc(item))
-            // _______________________________________________________________________________ CATEGORY OPEN CLOSING FUNCTION 95
+            // !_______________________________________________________________________________ CATEGORY OPEN CLOSING FUNCTION 95 NOT WORK
             let openCategoryBtn = document.querySelectorAll('.openCategory');
                 openCategoryBtn.forEach(item=>openCategoryFuncRem(item));
             // _______________________________________________________________________________ CATEGORY EDIT FUNCTION 95
@@ -255,23 +272,30 @@ function ALL(){
             // _______________________________________________________________________________ CATEGORY EDIT INPUT FUNCTION 95
             let editNameInput = document.querySelectorAll('.editNameInput');
                 editNameInput.forEach(item=>editNameInputFunRem(item));
-            // _______________________________________________________________________________ CATEGORY CURRENCY EDIT BUTTON FUNCTION 100
+            // _______________________________________________________________________________ CATEGORY CURRENCY EDIT BUTTON FUNCTION 95
             let selectCurSelect = document.querySelectorAll('.selectCur');
                 selectCurSelect.forEach(item=>selectCurFuncRem(item));
-            // ________________________________________________________________________________________ CATEGORY INPUT BUTTON CALCULATE 100
+            // _______________________________________________________________________________ CATEGORY INPUT BUTTON CALCULATE 95
             let editPriceBtn = document.querySelectorAll('.editPrice');
                 editPriceBtn.forEach(item=>editPriceFuncRem(item))
-            // ________________________________________________________________________________________ CATEGORY INPUT CALCULATE 100
+            // _______________________________________________________________________________ CATEGORY INPUT CALCULATE 95
             let valueCatInput = document.querySelectorAll('.valueCatInput');
                 valueCatInput.forEach(item=>valueCatInputFuncRem(item));
+            // _______________________________________________________________________________ CATEGORY BUTTON VALUE CALCULATE 95
+            let calculateItemBtn = document.querySelectorAll('.calculateItem');
+                calculateItemBtn.forEach(item=>calculateItemFuncRem(item))
         })
         // ________________________________________________________________________________________ ITEM REMOVE FUNCTION 100
         function removeItemFunc(item){
             item.addEventListener('click', function(){
+                let number = this.closest('.itemInputBlock').id;
+                number='#'+number
+                let resultRem = this.closest('.calculatorBloks').querySelector('.resultsIutput').querySelector(number);
+                resultRem.remove()
                 this.closest('.itemInputBlock').remove();
             })
         }
-        // ________________________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 100 NOT WORK
+        // !________________________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 100 NOT WORK
         function openItemFuncRem(item){
             item.removeEventListener('click', openItemFunc);
             item.addEventListener('click', openItemFunc);
@@ -300,7 +324,7 @@ function ALL(){
                 <h5 class="titleCategory">Name</h5>
                 <div class="priceCategoryItem">
                     <p><span class="cur">UAH</span> <span class="numb">0.00</span></p>
-                    <button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>
+                    <!--<button class="openCategory"><i class="fa-solid fa-chevron-up"></i></button>-->
                 </div>
             </div>
             <div class="contentCat">
@@ -344,7 +368,7 @@ function ALL(){
             // _______________________________________________________________________________ CATEGORY REMOVE FUNCTION 95
             let removeCatBtn = document.querySelectorAll('.removeCat');
                 removeCatBtn.forEach(item=>removeCatFunc(item))
-            // _______________________________________________________________________________ CATEGORY OPEN CLOSE FUNCTION 95
+            // !_______________________________________________________________________________ CATEGORY OPEN CLOSE FUNCTION 95 NOT WORK
             let openCategoryBtn = document.querySelectorAll('.openCategory');
                 openCategoryBtn.forEach(item=>openCategoryFuncRem(item));
             // _______________________________________________________________________________ CATEGORY EDIT FUNCTION 95
@@ -362,7 +386,7 @@ function ALL(){
             // ________________________________________________________________________________________ CATEGORY INPUT CALCULATE 100
             let valueCatInput = document.querySelectorAll('.valueCatInput');
                 valueCatInput.forEach(item=>valueCatInputFuncRem(item));
-
+            // ________________________________________________________________________________________ CATEGORY BUTTON VALUE CALCULATE 100
             let calculateItemBtn = document.querySelectorAll('.calculateItem');
             calculateItemBtn.forEach(item=>calculateItemFuncRem(item))
         }
@@ -372,7 +396,7 @@ function ALL(){
                 this.closest('.categoryItem').remove();
             })
         }
-        // ________________________________________________________________________________________ CATEGORY OPEN CLOSE FUNCTION 100
+        // !________________________________________________________________________________________ CATEGORY OPEN CLOSE FUNCTION 100 NOT WORK
         function openCategoryFuncRem(item){
             item.removeEventListener('click', openCategoryFunc);
             item.addEventListener('click', openCategoryFunc)
@@ -382,8 +406,10 @@ function ALL(){
             this.classList.toggle('active');
             if (this.classList.contains('active')){
                 parentCat.style.maxHeight = 0;
+                this.closest('.itemInputBlock').style.maxHeight = this.closest('.itemInputBlock').scrollHeight ='px'
             }else{
                 parentCat.style.maxHeight = parentCat.scrollHeight + 'px';
+                this.closest('.itemInputBlock').style.maxHeight = this.closest('.itemInputBlock').scrollHeight ='px'
             }
             this.classList.toggle('rotate');
         }
@@ -431,7 +457,7 @@ function ALL(){
                 if(valueCurr=='Mono'){
                     // There is a limit on the number of requests to the server, the array saved in the "array.js" folder. Updated as of 04/20/2023
                         // OR API
-                    // let resMono = await fetch('https://api.monobank.ua/bank/currency');
+                    // let resMono = await fetch(MonoArrApi);
                     // let data = await resMono.json();
                     // let result = await data;
                     // console.log(result)
@@ -479,7 +505,7 @@ function ALL(){
                     })
                 };
                 if(valueCurr=='NBP'){
-                    let resNBP = await fetch('http://api.nbp.pl/api/exchangerates/tables/a/last/5/');
+                    let resNBP = await fetch(NPBArrApi);
                     let data = await resNBP.json();
                     let result = await data[4];
                     result = Object.values(result);
@@ -504,7 +530,7 @@ function ALL(){
                     })
                 };
                 if(valueCurr=='NBU'){
-                    let resNBU = await fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+                    let resNBU = await fetch(NBUArrApi);
                     let data = await resNBU.json();
                     let result = await data;
                     result.forEach(item => {
@@ -559,10 +585,10 @@ function ALL(){
         function valueCatInputFunc(){
             let perentItem = this.closest('.categoryItem');
             let perentValue = perentItem.querySelector('.numb');
-
-
-            console.log(this)
-            if(this.value == ''){
+            let perentCurVal = perentItem.querySelector('.selectCur');
+            let inpVal = Number(this.value);
+            console.log(inpVal)
+            if(perentCurVal.value == ''){
                 this.closest('.categoryItem').querySelector('.numb').innerText = '0.00';
             }else{
                 let currencyChageRate = document.querySelector('.currencyChageRate');
@@ -579,7 +605,7 @@ function ALL(){
                     if(valueCurr=='Mono'){
                         // There is a limit on the number of requests to the server, the array saved in the "array.js" folder. Updated as of 04/20/2023
                             // OR API
-                        // let resMono = await fetch('https://api.monobank.ua/bank/currency');
+                        // let resMono = await fetch(MonoArrApi);
                         // let data = await resMono.json();
                         // let result = await data;
                         // console.log(result)
@@ -627,7 +653,7 @@ function ALL(){
                         })
                     };
                     if(valueCurr=='NBP'){
-                        let resNBP = await fetch('http://api.nbp.pl/api/exchangerates/tables/a/last/5/');
+                        let resNBP = await fetch(NPBArrApi);
                         let data = await resNBP.json();
                         let result = await data[4];
                         result = Object.values(result);
@@ -652,7 +678,7 @@ function ALL(){
                         })
                     };
                     if(valueCurr=='NBU'){
-                        let resNBU = await fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+                        let resNBU = await fetch(NBUArrApi);
                         let data = await resNBU.json();
                         let result = await data;
                         result.forEach(item => {
@@ -675,26 +701,21 @@ function ALL(){
                         })
                     };
                 }
-                if(this.value == 'USD'){
+                if(perentCurVal.value == 'USD'){
                     CurrencySelectRate()
-                    perentCur.innerText = (perentValueInput*NowUSD).toFixed(2);
+                    perentValue.innerText = (inpVal*NowUSD).toFixed(2);
                 }
-                if(this.value == 'PLN'){
+                if(perentCurVal.value == 'PLN'){
                     CurrencySelectRate()
-                    perentCur.innerText = (perentValueInput*NowPLN).toFixed(2);
+                    perentValue.innerText = (inpVal*NowPLN).toFixed(2);
                 }
-                if(this.value == 'EUR'){
+                if(perentCurVal.value == 'EUR'){
                     CurrencySelectRate()
-                    perentCur.innerText = (perentValueInput*NowEUR).toFixed(2);
+                    perentValue.innerText = (inpVal*NowEUR).toFixed(2);
                 }
-                if(this.value == 'UAH'){
-                    perentCur.innerText = (perentValueInput).toFixed(2);
+                if(perentCurVal.value == 'UAH'){
+                    perentValue.innerText = inpVal.toFixed(2);
                 }
-                
-                
-                
-                let value = Number(this.value).toFixed(2);
-                this.closest('.categoryItem').querySelector('.numb').innerText = value;
             }
         }
         // ________________________________________________________________________________________ CATEGORY BUTTON VALUE CALCULATE 100
@@ -719,7 +740,6 @@ function ALL(){
                 perentValue.innerText = sum.toFixed(2);
             }
         }
-
     }
     CALCULATORFUNC();
 }

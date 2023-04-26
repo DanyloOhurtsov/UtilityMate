@@ -643,7 +643,6 @@ main .calculator .calculatorBloks .resultCalc {
   width: 48%;
   border-radius: 24px;
   background-color: #656565;
-  max-height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,6 +663,7 @@ main .calculator .calculatorBloks .resultCalc .titleResult h2 {
 main .calculator .calculatorBloks .resultCalc .contentResult {
   padding-bottom: 24px;
   margin-top: 8px;
+  max-height: 0px;
 }
 main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput {
   display: -webkit-box;
