@@ -216,6 +216,7 @@ main .calculator .calculatorBloks {
           justify-content: space-between;
 }
 main .calculator .calculatorBloks .inputCalc {
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +225,6 @@ main .calculator .calculatorBloks .inputCalc {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
-  width: 48%;
 }
 main .calculator .calculatorBloks .inputCalc .contantItems {
   display: -webkit-box;
@@ -270,6 +270,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .titl
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 200px;
   color: #FFFFFF;
   background: none;
   font-family: "Nunito";
@@ -295,7 +296,6 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .titl
 main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .titlItem .text .editTitle {
   border: none;
   outline: none;
-  cursor: pointer;
   color: #FFFFFF;
   background: none;
   font-size: 18px;
@@ -360,7 +360,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .titleCategoryItem h5 {
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .titleCategoryItem .titleCategory {
   font-family: "Nunito";
   font-size: 16px;
   font-style: normal;
@@ -483,7 +483,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
   line-height: 22px;
   font-weight: 400;
 }
-main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left .removeBtn {
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left .removeCat {
   width: 100%;
   height: 24px;
   border: none;
@@ -494,7 +494,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
   border-radius: 24px;
   background-color: #FFCDCD;
 }
-main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left .removeBtn:hover {
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left .removeCat:hover {
   color: #FFFFFF;
   background-color: #FF8686;
 }
@@ -540,7 +540,15 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
           justify-content: center;
   border: 1px solid #8B8B8B;
 }
-main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .removeItem {
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .bottomItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .bottomItem .removeItem {
   background: none;
   border: none;
   width: 150px;
@@ -554,6 +562,31 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
   font-weight: 400;
   height: 40px;
   gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+  border-radius: 24px;
+}
+main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .bottomItem .calculateItem {
+  background: none;
+  border: none;
+  width: 300px;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  font-weight: 400;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,6 +638,107 @@ main .calculator .calculatorBloks .inputCalc .addNewItem span {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #FFFFFF;
+}
+main .calculator .calculatorBloks .resultCalc {
+  width: 48%;
+  border-radius: 24px;
+  background-color: #656565;
+  max-height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+}
+main .calculator .calculatorBloks .resultCalc .titleResult h2 {
+  color: #FFFFFF;
+  font-family: "Nunito";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 33px;
+  font-weight: 400;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult {
+  padding-bottom: 24px;
+  margin-top: 8px;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .totalResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 65px;
+  padding: 16px;
+  margin-top: 24px;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .totalResult h4 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+main .calculator .calculatorBloks .resultCalc .contentResult .totalResult p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .none {
