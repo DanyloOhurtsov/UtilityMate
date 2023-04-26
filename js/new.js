@@ -178,7 +178,7 @@ function ALL(){
             newItem.innerHTML = `
             <div class="titlItem">
                 <div class="text">
-                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Name" class="itemNameInput">
                     <button class="editTitle"><i class="fa-regular fa-pen-to-square"></i></button>
                 </div>
                 <div class="price">
@@ -251,9 +251,15 @@ function ALL(){
                 <p>UAH<span class="itemResultValue">0.00</span></p>
             `
             resultPerent.appendChild(newResultDiv)
+            let resulHeight = this.closest('.calculatorBloks').querySelector('.contentResult');
+                resulHeight.style.maxHeight = resulHeight.scrollHeight + 'px';
+                console.log(resulHeight);
             // _______________________________________________________________________________ ITEM REMOVE FUNCTION 95
             let removeItemBtn = perentItem.querySelectorAll('.removeItem');
-                removeItemBtn.forEach(item=>removeItemFunc(item));
+            removeItemBtn.forEach(item=>removeItemFunc(item));
+            // _______________________________________________________________________________ ITEM NAME FUNCTION 95
+            let itemNameInput = document.querySelectorAll('.itemNameInput');
+                itemNameInput.forEach(item=>itemNameInputFuncRem(item));
             // !_______________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 95 NOT WORK
             let openItemBtn = perentItem.querySelectorAll('.openItem');
                 // openItemBtn.forEach(item=>openItemFuncRem(item));
@@ -294,6 +300,22 @@ function ALL(){
                 resultRem.remove()
                 this.closest('.itemInputBlock').remove();
             })
+        }
+        // ________________________________________________________________________________________ ITEM NAME FUNCTION 100
+        function itemNameInputFuncRem(item){
+            item.removeEventListener('input', itemNameInputFunc);
+            item.addEventListener('input', itemNameInputFunc);
+        }
+        function itemNameInputFunc(){
+            let value = this.value;
+            let thiId = this.closest('.itemInputBlock').id;
+            let resultPerent = this.closest('.calculatorBloks').querySelector('.resultCalc').querySelector('#'+thiId)
+            resultPerent = resultPerent.querySelector('h5');
+            if(value == ''){
+                resultPerent.innerText = 'Item name'
+            }else{
+                resultPerent.innerText = value;
+            }
         }
         // !________________________________________________________________________________________ ITEM OPEN CLOSING FUNCTION 100 NOT WORK
         function openItemFuncRem(item){
