@@ -98,6 +98,8 @@ header .headerInside .contactUsHeader {
 
 main {
   padding: 0 16px;
+  max-width: 1240px;
+  margin: auto;
 }
 main .calculator {
   margin: auto;
@@ -210,7 +212,6 @@ main .calculator .calculatorBloks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   margin-top: 64px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -249,12 +250,16 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .titl
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .titlItem .text {
   gap: 16px;
@@ -411,6 +416,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
   display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
+  gap: 8px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -418,7 +424,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
 main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left, main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .right {
   gap: 16px;
   width: 50%;
-  width: 200px;
+  max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +452,7 @@ main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .cont
 }
 main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .left .blockEdit .input, main .calculator .calculatorBloks .inputCalc .contantItems .itemInputBlock .contentInput .inputsSec .categoryItem .contentCat .editCategory .right .blockEdit .input {
   gap: 8px;
-  width: 150px;
+  max-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,23 +646,27 @@ main .calculator .calculatorBloks .inputCalc .addNewItem span {
           justify-content: center;
   border: 1px solid #FFFFFF;
 }
-main .calculator .calculatorBloks .resultCalc {
+main .calculator .calculatorBloks .resultAbs {
   width: 48%;
+  min-height: 190px;
+  overflow: hidden;
+}
+main .calculator .calculatorBloks .resultAbs .resultCalc {
+  width: 100%;
   border-radius: 24px;
   background-color: #656565;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 10px;
   top: 0;
+  right: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 24px;
 }
-main .calculator .calculatorBloks .resultCalc .titleResult h2 {
+main .calculator .calculatorBloks .resultAbs .resultCalc .titleResult h2 {
   color: #FFFFFF;
   font-family: "Nunito";
   font-size: 24px;
@@ -664,12 +674,12 @@ main .calculator .calculatorBloks .resultCalc .titleResult h2 {
   line-height: 33px;
   font-weight: 400;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult {
   padding-bottom: 24px;
   margin-top: 8px;
   max-height: 106px;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .resultsIutput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,7 +690,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput {
   gap: 16px;
   margin-top: 16px;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .resultsIutput .itemResult {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,7 +701,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .ite
   background-color: #FFFFFF;
   border-radius: 24px;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult h5 {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .resultsIutput .itemResult h5 {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -699,7 +709,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .ite
   line-height: 25px;
   color: #000000;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .itemResult p {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .resultsIutput .itemResult p {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -711,7 +721,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .resultsIutput .ite
   display: flex;
   gap: 8px;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .totalResult {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .totalResult {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,7 +738,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .totalResult {
   padding: 16px;
   margin-top: 24px;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .totalResult h4 {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .totalResult h4 {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -736,13 +746,303 @@ main .calculator .calculatorBloks .resultCalc .contentResult .totalResult h4 {
   line-height: 33px;
   color: #000000;
 }
-main .calculator .calculatorBloks .resultCalc .contentResult .totalResult p {
+main .calculator .calculatorBloks .resultAbs .resultCalc .contentResult .totalResult p {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #000000;
+}
+main .aboutUs {
+  width: 100%;
+  margin-top: 100px;
+}
+main .aboutUs h2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 40px;
+  font-style: normal;
+  line-height: 55px;
+  font-weight: 600;
+}
+main .aboutUs .contentAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  gap: 12vw;
+}
+main .aboutUs .contentAbout .leftAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+main .aboutUs .contentAbout .leftAbout .img1, main .aboutUs .contentAbout .leftAbout .img2 {
+  width: 350px;
+  height: 250px;
+  border-radius: 24px;
+  background-color: #CCCCCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+main .aboutUs .contentAbout .leftAbout .img1 img, main .aboutUs .contentAbout .leftAbout .img2 img {
+  height: 100%;
+}
+main .aboutUs .contentAbout .rightAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+}
+main .aboutUs .contentAbout .rightAbout p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+main .donate {
+  margin: auto;
+  margin-top: 100px;
+  max-width: 516px;
+}
+main .donate h2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 40px;
+  font-style: normal;
+  line-height: 55px;
+  font-weight: 600;
+}
+main .donate .donationForm {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+main .donate .donationForm button, main .donate .donationForm a {
+  width: 250px;
+  height: 42px;
+  border-radius: 24px;
+  background: none;
+  border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+main .donate .donationForm .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .donate .donationForm .up input {
+  width: 250px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: #CCCCCC;
+  color: black;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .donate .donationForm .up .leftUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+main .donate .donationForm .up .rightUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+main .donate .donationForm .up .rightUp .donateBtn {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .donate .donationForm .up .rightUp .paypalBtn {
+  background-color: #2F6EB3;
+  color: #FFFFFF;
+}
+main .donate .donationForm .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .donate .donationForm .bottom .payoneerBtn {
+  background-color: #E45327;
+  color: #FFFFFF;
+}
+main .donate .donationForm .bottom .buyMeBtn {
+  background-color: #F9DE4B;
+  color: #000000;
+}
+
+.contactUs {
+  background-color: #656565;
+  padding: 64px 0 32px 0;
+  margin-top: 100px;
+}
+.contactUs .contentFooter {
+  max-width: 702px;
+  margin: auto;
+  text-align: center;
+}
+.contactUs .contentFooter .logoFooter {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.contactUs .contentFooter hr {
+  color: #FFFFFF;
+  margin-top: 24px;
+  border-radius: 1px;
+  border: 1px solid #FFFFFF;
+}
+.contactUs .contentFooter .inside {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.contactUs .contentFooter .inside .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.contactUs .contentFooter .inside .left input {
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 250px;
+  height: 42px;
+  border-radius: 24px;
+  padding: 0 16px;
+}
+.contactUs .contentFooter .inside .rigth {
+  width: 250px;
+  height: 100px;
+}
+.contactUs .contentFooter .inside .rigth #textarea {
+  width: 250px;
+  height: 100px;
+  resize: none;
+}
+.contactUs .contentFooter .contantBtn {
+  width: 250px;
+  height: 42px;
+  border-radius: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-top: 16px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contactUs .contentFooter .copyright {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #CCCCCC;
+  margin-top: 24px;
 }
 
 .none {
@@ -754,7 +1054,7 @@ main .calculator .calculatorBloks .resultCalc .contentResult .totalResult p {
           transform: rotate(180deg);
 }
 
-@media (max-width: 630px) {
+@media (max-width: 920px) {
   header {
     height: 70px;
     padding: 16px;
@@ -796,16 +1096,17 @@ main .calculator .calculatorBloks .resultCalc .contentResult .totalResult p {
     color: #FFFFFF;
     background: none;
     font-size: 22px;
+    cursor: pointer;
   }
   header .headerMobile .menu {
     top: 54px;
     right: -16px;
     padding: 64px;
+    width: 50vw;
     position: absolute;
     background-color: #656565;
-    border-radius: 16px 0 0 16px;
-    -webkit-box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
-            box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0 16px 16px;
+    border-top: 1px solid #CCCCCC;
   }
   header .headerMobile .menu ul {
     gap: 64px;
@@ -849,5 +1150,126 @@ main .calculator .calculatorBloks .resultCalc .contentResult .totalResult p {
     -webkit-transform: translate(0%);
             transform: translate(0%);
     background-color: white;
+  }
+  main {
+    width: 100%;
+    padding: 0 16px;
+  }
+  main .calculator {
+    margin-top: 32px;
+  }
+  main .calculator h2 {
+    display: none;
+  }
+  main .calculator .ratesection {
+    padding: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  main .calculator .calculatorBloks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .calculator .calculatorBloks .inputCalc {
+    width: 100%;
+  }
+  main .calculator .calculatorBloks .inputCalc .editCategory {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 16px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  main .calculator .calculatorBloks .inputCalc .editCategory .left, main .calculator .calculatorBloks .inputCalc .editCategory .right {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+  main .calculator .calculatorBloks .resultAbs {
+    width: 100%;
+  }
+  main .calculator .calculatorBloks .resultAbs .resultCalc .titleResult h2 {
+    display: block;
+  }
+  main .aboutUs {
+    width: 100%;
+    margin-top: 80px;
+  }
+  main .aboutUs h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  main .aboutUs .contentAbout {
+    margin-top: 32px;
+  }
+  main .aboutUs .contentAbout .leftAbout {
+    display: none;
+  }
+  main .aboutUs .contentAbout .rightAbout {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  main .donate {
+    margin-top: 80px;
+  }
+  main .donate h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  main .donate .donationForm button, main .donate .donationForm a {
+    width: 300px;
+  }
+  main .donate .donationForm .up {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .donate .donationForm .up .leftUp input, main .donate .donationForm .up .rightUp input {
+    width: 300px;
+  }
+  main .donate .donationForm .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactUs {
+    padding: 16px 16px 32px 16px;
+  }
+  .contactUs .contentFooter .logoFooter {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .contactUs .contentFooter hr {
+    margin-top: 16px;
+  }
+  .contactUs .contentFooter .inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 16px;
+  }
+  .contactUs .contentFooter .copyright {
+    margin-top: 16px;
+    font-size: 16px;
   }
 }

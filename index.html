@@ -14,9 +14,10 @@
         <div class="headerInside">
             <a href="index.html" class="headerLogo">UTILITYMATE</a>
             <ul>
-                <li><a href="index.html">Calculator</a></li>
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="index.html">Donate</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#aboutUs">About us</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contactUs">Contact us</a></li>
             </ul>
             <a href="#" class="contactUsHeader">Contact Us</a>
         </div>
@@ -25,24 +26,24 @@
             <button class="headerBtnMobile"><i class="fa-solid fa-bars"></i></button>
             <div class="menu none">
                 <ul>
-                    <li><a href="#">Calculator</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#clalculator">Calculator</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <section class="calculator">
+        <div class="calculator" id="calculator">
             <h2>Calculator</h2>
             <div class="ratesection">
                 <div class="currency">
                     <p>Currency:</p>
                     <select name="" id="" class="currencyChageRate">
                         <option value="Mono">Monobank Ukraine</option>
-                        <option value="NBU">National Bank of Ukraine</option>
-                        <option value="NBP">National Bank of Poland</option>
+                        <!-- <option value="NBU">National Bank of Ukraine</option>
+                        <option value="NBP">National Bank of Poland</option> -->
                     </select>
                 </div>
                 <div class="rate">
@@ -126,28 +127,87 @@
                     </div>
                     <button class="addNewItem">Add new<span><i class="fa-solid fa-plus"></i></span></button>
                 </div>
-                <div class="resultCalc">
-                    <div class="titleResult">
-                        <h2>Results</h2>
-                    </div>
-                    <div class="contentResult">
-                        <hr>
-                        <div class="resultsIutput">
-                            <!-- <div class="itemResult">
-                                <h5>Value</h5>
-                                <p>UAH<span class="itemResultValue">0.00</span></p>
-                            </div> -->
+                <div class="resultAbs">
+                    <div class="resultCalc">
+                        <div class="titleResult">
+                            <h2>Results</h2>
                         </div>
-                        <div class="totalResult">
-                            <h4>Total</h4>
-                            <p class="totalResultValue">UAH <span>0.00</span></p>
+                        <div class="contentResult">
+                            <hr>
+                            <div class="resultsIutput">
+                                <!-- <div class="itemResult">
+                                    <h5>Value</h5>
+                                    <p>UAH<span class="itemResultValue">0.00</span></p>
+                                </div> -->
+                            </div>
+                            <div class="totalResult">
+                                <h4>Total</h4>
+                                <p class="totalResultValue">UAH <span>0.00</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="aboutUs" id="aboutUs">
+            <h2>About Us</h2>
+            <div class="contentAbout">
+                <div class="leftAbout">
+                    <div class="img1">
+                        <img src="img/3d-samochod-elektryczny-i-budynek_23-2148972401.avif" alt="Image">
+                    </div>
+                    <div class="img2">
+                        <img src="img/dom-na-bialym-tle-w-tej-dziedzinie_1303-23773.avif" alt="Image">
+                    </div>
+                </div>
+                <div class="rightAbout">
+                    <p>At UtilityMate, we are dedicated to providing the best utility bill calculation and management service for individuals and businesses. We understand that utility bills can be a hassle, and that's why we've developed a user-friendly web application that makes it easy to calculate and track your bills.</p>
+                    <p>Our team consists of experienced professionals who are passionate about delivering high-quality service and ensuring customer satisfaction. We strive to provide personalized solutions to meet the unique needs of our clients, and we're always here to answer any questions or concerns you may have.</p>
+                    <p>We believe in transparency, honesty, and integrity, and we work hard to maintain these values in everything we do. Whether you're looking to save money on your bills, streamline your billing process, or simply gain more control over your utility expenses, we're here to help.</p>
+                    <p>Thank you for choosing UtilityMate as your trusted partner for utility bill management. We look forward to serving you and helping you achieve your goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="donate" id="donate">
+            <h2>Donate</h2>
+            <div class="donationForm">
+                <div class="up">
+                    <div class="leftUp">
+                        <input type="text" name="card" id="card" required placeholder="Card number">
+                        <input type="text" name="name" id="name" required placeholder="Name on card">
+                        <input type="month" name="expiry" id="expiry" required placeholder="Expiry date">
+                    </div>
+                    <div class="rightUp">
+                        <input type="number" name="amount" id="amount" required min="1" step="1" placeholder="Amount">
+                        <button class="donateBtn">Donate</button>
+                        <a href="https://www.paypal.com/pl/home" target="_blank" class="paypalBtn">PayPal</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="https://www.payoneer.com/ua/" target="_blank" class="payoneerBtn">Payoneer</a>
+                    <a href="https://www.buymeacoffee.com/" target="_blank" class="buyMeBtn">Buy me a coffee</a>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer class="contactUs" id="contactUs">
+        <div class="contentFooter">
+            <a href="index.html" class="logoFooter">UtilityMate</a>
+            <hr>
+            <div class="inside">
+                <div class="left">
+                    <input type="text" class="nameFooter" placeholder="Your name...">
+                    <input type="email" class="emailFooter" placeholder="Your email...">
+                </div>
+                <div class="right">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Your message..." style="width: 250px;height: 100px;resize: none;border-radius: 24px;padding: 10px 16px;"></textarea>
+                </div>
+            </div>
+            <button class="contantBtn">Send message</button>
+            <p class="copyright">Copyright 2023 | Danylo Ohurtsov</p>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/0e88421850.js" crossorigin="anonymous"></script>
-    <script src="js/new.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -89,10 +89,13 @@ header{
 // MAIN
 main{
     padding: 0 16px;
+    max-width: 1240px;
+    margin: auto;
     .calculator{
         margin: auto;
         margin-top: 64px;
         max-width: 1110px;
+        // margin-bottom: 100px;
         h2{
             color: $color00;
             text-align: center;
@@ -173,9 +176,9 @@ main{
             gap: 32px;
             width: 100%;
             display: flex;
-            position: relative;
             margin-top: 64px;
             justify-content: space-between;
+            // flex-direction: column;
             .inputCalc{
                 width: 48%;
                 display: flex;
@@ -193,8 +196,9 @@ main{
                         transition: 500ms;
                         .titlItem{
                             display: flex;
-                            align-items: center;
+                            align-items: start;
                             justify-content: space-between;
+                            flex-direction: column;
                             .text{
                                 gap: 16px;
                                 display: flex;
@@ -302,11 +306,12 @@ main{
                                         .editCategory{
                                             display: flex;
                                             margin-top: 8px;
+                                            gap: 8px;
                                             justify-content: space-between;
                                             .left, .right{
                                                 gap: 16px;
                                                 width: 50%;
-                                                width: 200px;
+                                                max-width: 200px;
                                                 display: flex;
                                                 flex-direction: column;
                                                 .blockEdit{
@@ -321,7 +326,7 @@ main{
                                                     justify-content: space-between;
                                                     .input{
                                                         gap: 8px;
-                                                        width: 150px;
+                                                        max-width: 150px;
                                                         display: flex;
                                                         justify-content: end;
                                                         input{
@@ -482,47 +487,80 @@ main{
                     }
                 }
             }
-            .resultCalc{
+            .resultAbs{
                 width: 48%;
-                border-radius: 24px;
-                background-color: $color65;
-                display: flex;
-                position: absolute;
-                right: 10px;
-                top: 0;
-                flex-direction: column;
-                padding: 24px;
-                .titleResult{
-                    h2{
-                        color: $colorFF;
-                        font-family: $family;
-                        font-size: $font-size24;
-                        font-style: $font-styleNor;
-                        line-height: $font-height33;
-                        font-weight: $font-weight400;
+                min-height: 190px;
+                overflow: hidden;
+                .resultCalc{
+                    width: 100%;
+                    border-radius: 24px;
+                    background-color: $color65;
+                    display: flex;
+                    top: 0;
+                    right: 0;
+                    flex-direction: column;
+                    padding: 24px;
+                    .titleResult{
+                        h2{
+                            color: $colorFF;
+                            font-family: $family;
+                            font-size: $font-size24;
+                            font-style: $font-styleNor;
+                            line-height: $font-height33;
+                            font-weight: $font-weight400;
+                        }
                     }
-                }
-                .contentResult{
-                    padding-bottom: 24px;
-                    margin-top: 8px;
-                    max-height: 106px;
-                    .resultsIutput{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 16px;
-                        margin-top: 16px;
-                        .itemResult{
+                    .contentResult{
+                        padding-bottom: 24px;
+                        margin-top: 8px;
+                        max-height: 106px;
+                        .resultsIutput{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                            margin-top: 16px;
+                            .itemResult{
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 16px;
+                                background-color: $colorFF;
+                                border-radius: 24px;
+                                h5{
+                                    font-family: $family;
+                                    font-style: $font-styleNor;
+                                    font-weight: $font-weight700;
+                                    font-size: $font-size18;
+                                    line-height: $font-height25;
+                                    color: $color00;
+                                }
+                                p{
+                                    font-family: $family;
+                                    font-style: $font-styleNor;
+                                    font-weight: $font-weight700;
+                                    font-size: $font-size18;
+                                    line-height: $font-height25;
+                                    color: $color00;
+                                    display: flex;
+                                    gap: 8px;
+                                }
+                            }
+                        }
+                        .totalResult{
                             display: flex;
                             justify-content: space-between;
-                            padding: 16px;
-                            background-color: $colorFF;
+                            align-items: center;
                             border-radius: 24px;
-                            h5{
+                            background-color: $colorFF;
+                            width: 100%;
+                            height: 65px;
+                            padding: 16px;
+                            margin-top: 24px;
+                            h4{
                                 font-family: $family;
                                 font-style: $font-styleNor;
                                 font-weight: $font-weight700;
-                                font-size: $font-size18;
-                                line-height: $font-height25;
+                                font-size: $font-size24;
+                                line-height: $font-height33;
                                 color: $color00;
                             }
                             p{
@@ -532,40 +570,240 @@ main{
                                 font-size: $font-size18;
                                 line-height: $font-height25;
                                 color: $color00;
-                                display: flex;
-                                gap: 8px;
                             }
-                        }
-                    }
-                    .totalResult{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        border-radius: 24px;
-                        background-color: $colorFF;
-                        width: 100%;
-                        height: 65px;
-                        padding: 16px;
-                        margin-top: 24px;
-                        h4{
-                            font-family: $family;
-                            font-style: $font-styleNor;
-                            font-weight: $font-weight700;
-                            font-size: $font-size24;
-                            line-height: $font-height33;
-                            color: $color00;
-                        }
-                        p{
-                            font-family: $family;
-                            font-style: $font-styleNor;
-                            font-weight: $font-weight700;
-                            font-size: $font-size18;
-                            line-height: $font-height25;
-                            color: $color00;
                         }
                     }
                 }
             }
+        }
+    }
+    .aboutUs{
+        width: 100%;
+        margin-top: 100px;
+        h2{
+            color: $color00;
+            text-align: center;
+            font-family: $family;
+            font-size: $font-size40;
+            font-style: $font-styleNor;
+            line-height: $font-height55;
+            font-weight: $font-weight600;
+        }
+        .contentAbout{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            gap: 12vw;
+            .leftAbout{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                .img1, .img2{
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 24px;
+                    background-color: $colorCC;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+            .rightAbout{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                p{
+                    font-family: $family;
+                    font-style: $font-styleNor;
+                    font-weight: $font-weight600;
+                    font-size: $font-size24;
+                    line-height: $font-height33;
+                }
+            }
+        }
+    }
+    .donate{
+        margin: auto;
+        margin-top: 100px;
+        max-width: 516px;
+        h2{
+            color: $color00;
+            text-align: center;
+            font-family: $family;
+            font-size: $font-size40;
+            font-style: $font-styleNor;
+            line-height: $font-height55;
+            font-weight: $font-weight600;
+        }
+        .donationForm{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            button, a{
+                width: 250px;
+                height: 42px;
+                border-radius: 24px;
+                background: none;
+                border: none;
+                font-family: $family;
+                font-style: $font-styleNor;
+                font-weight: $font-weight400;
+                font-size: $font-size16;
+                line-height: $font-height22;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+            }
+            .up{
+                display: flex;
+                gap: 16px;
+                justify-content: space-between;
+                input{
+                    width: 250px;
+                    height: 42px;
+                    padding: 0 16px;
+                    border-radius: 24px;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    background-color: $colorCC;
+                    color: black;
+                    font-family: $family;
+                    font-style: $font-styleNor;
+                    font-weight: $font-weight400;
+                    font-size: $font-size16;
+                    line-height: $font-height22;
+                }
+                .leftUp{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+                .rightUp{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .donateBtn{
+                        background-color: $color00;
+                        color: $colorFF;
+                        font-family: $family;
+                        font-style: $font-styleNor;
+                        font-weight: $font-weight400;
+                        font-size: $font-size16;
+                        line-height: $font-height22;
+                    }
+                    .paypalBtn{
+                        background-color: $color2F;
+                        color: $colorFF;
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                gap: 16px;
+                justify-content: space-between;
+                .payoneerBtn{
+                    background-color: $colorE4;
+                    color: $colorFF;
+                }
+                .buyMeBtn{
+                    background-color: $colorF9;
+                    color: $color00;
+                }
+            }
+        }
+    }
+}
+.contactUs{
+    background-color: $color65;
+    padding: 64px 0 32px 0;
+    margin-top: 100px;
+    .contentFooter{
+        max-width: 702px;
+        margin: auto;
+        text-align: center;
+        .logoFooter{
+            text-transform: uppercase;
+            font-family: 'Bebas Neue';
+            font-style: $font-styleNor;
+            font-weight: $font-weight400;
+            font-size: $font-size40;
+            line-height: $font-height48;
+            text-decoration: none;
+            color: $colorFF;
+        }
+        hr{
+            color: $colorFF;
+            margin-top: 24px;
+            border-radius: 1px;
+            border: 1px solid $colorFF;
+        }
+        .inside{
+            justify-content: center;
+            margin-top: 24px;
+            display: flex;
+            gap: 16px;
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                input{
+                    border: none;
+                    background: none;
+                    outline: none;
+                    background-color: $colorFF;
+                    font-family: $family;
+                    font-style: $font-styleNor;
+                    font-weight: $font-weight400;
+                    font-size: $font-size16;
+                    line-height: $font-height22;
+                    width: 250px;
+                    height: 42px;
+                    border-radius: 24px;
+                    padding: 0 16px;
+                }
+            }
+            .rigth{
+                width: 250px;
+                height: 100px;
+                #textarea{
+                    width: 250px;
+                    height: 100px;
+                    resize: none;
+                }
+            }
+        }
+        .contantBtn{
+            width: 250px;
+            height: 42px;
+            border-radius: 24px;
+            background: none;
+            border: none;
+            outline: none;
+            background-color: $color00;
+            color: $colorFF;
+            margin-top: 16px;
+            font-family: $family;
+            font-style: $font-styleNor;
+            font-weight: $font-weight400;
+            font-size: $font-size16;
+            line-height: $font-height22;
+        }
+        .copyright{
+            font-family: $family;
+            font-style: $font-styleNor;
+            font-weight: $font-weight400;
+            font-size: $font-size16;
+            line-height: $font-height22;
+            color: $colorCC;
+            margin-top: 24px;
         }
     }
 }
@@ -580,7 +818,7 @@ main{
 
 
 // Media
-@media (max-width: 630px) {
+@media (max-width: 920px) {
     header{
         height: 70px;
         padding: 16px;
@@ -613,15 +851,19 @@ main{
                 color: $colorFF;
                 background: none;
                 font-size: $font-size22;
+                cursor: pointer;
             }
             .menu{
                 top: 54px;
                 right: -16px;
                 padding: 64px;
+                width: 50vw;
+                // height: 100vh;
                 position: absolute;
                 background-color: $color65;
-                border-radius: 16px 0 0 16px;
-                box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
+                border-radius: 0px 0 16px 16px;
+                border-top: 1px solid $colorCC;
+                // box-shadow: -10px 0px 12px rgba(0, 0, 0, 0.25);
                 ul{
                     gap: 64px;
                     display: flex;
@@ -659,6 +901,112 @@ main{
                         }
                     }
                 }
+            }
+        }
+    }
+    main{
+        width: 100%;
+        padding: 0 16px;
+        .calculator{
+            margin-top: 32px;
+            h2{
+                display: none;
+            }
+            .ratesection{
+                padding: 16px ;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .calculatorBloks{
+                flex-direction: column;
+                .inputCalc{
+                    width: 100%;
+                    .editCategory{
+                        flex-direction: column-reverse;
+                        gap: 16px;
+                        align-items: end;
+                        .left, .right{
+                            width: 100% !important;
+                            max-width: 500px!important;
+                        }
+                    }
+                }
+                .resultAbs{
+                    width: 100%;
+                    .resultCalc{
+                        .titleResult{
+                            h2{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .aboutUs{
+            width: 100%;
+            margin-top: 80px;
+            h2{
+                font-size: $font-size32;
+                line-height: 44px;
+            }
+            .contentAbout{
+                margin-top: 32px;
+                .leftAbout{
+                    display: none;
+                }
+                .rightAbout{
+                    font-size: $font-size18;
+                    line-height: $font-height25;
+                }
+            }
+        }
+        .donate{
+            margin-top: 80px;
+            h2{
+                font-size: $font-size32;
+                line-height: 44px;
+            }
+            .donationForm{
+                button, a{
+                    width: 300px;
+                }
+                .up{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    .leftUp, .rightUp{
+                        input{
+                            width: 300px;
+                        }
+                    }
+                }
+                .bottom{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+    .contactUs{
+        padding: 16px 16px 32px 16px;
+        .contentFooter{
+            .logoFooter{
+                font-size: $font-size32;
+                line-height: $font-height38;
+            }
+            hr{
+                margin-top: 16px;
+            }
+            .inside{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 16px;
+            }
+            .copyright{
+                margin-top: 16px;
+                font-size: $font-size16;
             }
         }
     }
