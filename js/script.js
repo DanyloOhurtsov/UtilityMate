@@ -588,16 +588,19 @@ function ALL(){
                 };
             }
             if(this.value == 'USD'){
-                CurrencySelectRate()
-                perentCur.innerText = (perentValueInput*NowUSD).toFixed(2);
+                CurrencySelectRate().then(()=>{
+                    perentCur.innerText = (perentValueInput*NowUSD).toFixed(2);
+                })
             }
             if(this.value == 'PLN'){
-                CurrencySelectRate()
-                perentCur.innerText = (perentValueInput*NowPLN).toFixed(2);
+                CurrencySelectRate().then(()=>{
+                    perentCur.innerText = (perentValueInput*NowPLN).toFixed(2);
+                })
             }
             if(this.value == 'EUR'){
-                CurrencySelectRate()
-                perentCur.innerText = (perentValueInput*NowEUR).toFixed(2);
+                CurrencySelectRate().then(()=>{
+                    perentCur.innerText = (perentValueInput*NowEUR).toFixed(2);
+                })
             }
             if(this.value == 'UAH'){
                 perentCur.innerText = (perentValueInput).toFixed(2);
@@ -739,6 +742,7 @@ function ALL(){
                     };
                     if(perentCurVal.value == 'USD'){
                         // CurrencySelectRate()
+                        console.log('hello')
                         perentValue.innerText = (inpVal*NowUSD).toFixed(2);
                     }
                     if(perentCurVal.value == 'PLN'){
